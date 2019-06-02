@@ -1,38 +1,38 @@
 <style lang="scss">
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-  #nav {
-    padding: 30px;
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
+  #content {
+    flex: 1 0 auto;
   }
 </style>
 
 <template>
   <div id="app">
-    <Header></Header>
-    <Navigation></Navigation>
-    <router-view></router-view>
+    <div id="content">
+      <Header></Header>
+      <Navigation></Navigation>
+      <main>
+        <router-view></router-view>
+      </main>
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/organisms/Navigation.vue';
 import Header from '@/components/organisms/Header.vue';
+import Footer from './components/organisms/Footer.vue';
 
 export default {
   name: 'app',
   components: {
+    Footer,
     Header,
     Navigation,
   },

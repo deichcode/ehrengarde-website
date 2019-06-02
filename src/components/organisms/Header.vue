@@ -6,7 +6,7 @@
       <Wappen corps="reservisten"></Wappen>
       <Wappen corps="eos"></Wappen>
     </div>
-    <router-link to="/"><h1>Ehrengarde der Stadt Neuwied e.V.</h1></router-link>
+    <router-link to="/"><h1>Ehrengarde der Stadt Neuwied&nbsp;e.V.</h1></router-link>
   </header>
 </template>
 
@@ -25,9 +25,10 @@ export default {
   }
 
   .wappen {
+    max-width: 700px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
     width: calc(100% - 40px);
   }
 
@@ -37,6 +38,7 @@ export default {
 
   h1 {
     font-family: FetteUNZFraktur, serif;
+    text-align: center;
     font-size: 2rem;
     color: $white;
     margin-top: 10px;
