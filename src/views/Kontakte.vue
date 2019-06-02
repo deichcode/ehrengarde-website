@@ -1,12 +1,15 @@
 <template>
   <div>
-    <p>Startseite</p>
+    <p>Kontakte</p>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'home',
+  name: 'Kontakte',
 };
 </script>
+
+<style scoped>
+
+</style>
