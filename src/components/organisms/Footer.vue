@@ -19,5 +19,9 @@ export default {
     font-size: 0.4rem;
     padding: $outer-space;
     flex-shrink: 0;
+
+    a {
+      @include navigation-link
+    }
   }
 </style>
