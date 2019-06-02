@@ -18,7 +18,6 @@ export default {
   },
   computed: {
     path() {
-      console.log('this.corps', this.corps);
       switch (this.corps) {
         case 'aktive':
           return wappenAktive;
