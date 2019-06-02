@@ -19,3 +19,11 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Ehrengarde der Stadt Neuwied e.V.(21180911-9031-4e57-85c4-897d712eb14a)'
+    appType: 'webApp'
+    WebAppName: 'ehrengarde-website-dev'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
