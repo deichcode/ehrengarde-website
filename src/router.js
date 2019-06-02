@@ -41,5 +41,10 @@ export default new Router({
       name: 'Termine',
       component: () => import('./views/Termine.vue'),
     },
+    {
+      path: '/impressum',
+      name: 'Impressum',
+      component: () => import('./views/Impressum.vue'),
+    },
   ],
 });

@@ -1,9 +1,11 @@
 <template>
   <footer>
     <router-link to="/impressum">Impressum</router-link>
-    _
-    Ehrengarde der Stadt Neuwied e.V. | Geschäftsführer: Marcel Thran |
-    Eingetragen beim Amtsgericht Montabaur unter Vereinsregister Nr. 11338
+    <p>_</p>
+    <p>Ehrengarde&nbsp;der&nbsp;Stadt&nbsp;Neuwied&nbsp;e.V.
+      Geschäftsführer:&nbsp;Marcel&nbsp;Thran
+      Eingetragen&nbsp;beim&nbsp;Amtsgericht unter&nbsp;Vereinsregister&nbsp;Nr.&nbsp;11338
+    </p>
   </footer>
 </template>
 
@@ -16,9 +18,10 @@ export default {
 <style scoped lang="scss">
   footer {
     background: $white;
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     padding: $outer-space;
     flex-shrink: 0;
+    text-align: center;
 
     a {
       @include navigation-link
