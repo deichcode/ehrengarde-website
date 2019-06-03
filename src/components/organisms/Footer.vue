@@ -22,9 +22,14 @@ export default {
     padding: $outer-space;
     flex-shrink: 0;
     text-align: center;
+    color: $gray;
 
     a {
       @include navigation-link
+    }
+
+    p {
+      color: inherit;
     }
   }
 </style>
