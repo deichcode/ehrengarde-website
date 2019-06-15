@@ -7,8 +7,8 @@
 </style>
 
 <template>
-  <div>
-    <p>Kontakte</p>
+  <div class="content">
+    <h2 class="title">Kontakt zur Garde</h2>
     <div id="kontakte">
       <Contact :src="marcel" position="Geschäftsführer" name="Marcel Thran"
                email="geschaeftsfuehrer@ehrengarde-neuwied.de"></Contact>

@@ -6,14 +6,14 @@
     flex-direction: column;
     min-height: 100vh;
   }
-  #content {
+  #wrapper {
     flex: 1 0 auto;
   }
 </style>
 
 <template>
   <div id="app">
-    <div id="content">
+    <div id="wrapper">
       <Header></Header>
       <Navigation></Navigation>
       <main>

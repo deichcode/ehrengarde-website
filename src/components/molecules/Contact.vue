@@ -3,7 +3,7 @@
     height: 85px;
     background: $light-blue;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 5px;
     flex: 0 0 300px;
     color: $white;
