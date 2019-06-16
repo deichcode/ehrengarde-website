@@ -14,15 +14,18 @@
 <template>
   <div @click="tabZoom" style="height: 100%;">
     <l-map
-      :id="id"
-      :zoom="zoom"
+      ref="locationMap"
+      :zoom="baseZoom"
       :center="center"
       :options="{
         zoomControl: false,
         dragging: !isMobile,
-        scrollWheelZoom: !isMobile,
+        touchZoom: !isMobile,
         doubleClickZoom: !isMobile,
-        touchZoom: !isMobile
+        scrollWheelZoom: !isMobile,
+        boxZoom: !isMobile,
+        keyboard: !isMobile,
+        tap: !isMobile,
       }"
     >
       <l-tile-layer :url="url"></l-tile-layer>
@@ -54,14 +57,12 @@ export default {
       isMobile: L.Browser.mobile,
     };
   },
-  computed: {
-    zoom() {
-      return this.baseZoom - this.zoomOffset;
-    },
-  },
   methods: {
     tabZoom() {
       this.zoomOffset = (this.zoomOffset + 2) % 8;
+      this.$nextTick(() => {
+        this.$refs.locationMap.mapObject.setZoom(this.baseZoom - this.zoomOffset);
+      });
     },
     async getGeolocation() {
       const result = await provider.search({ query: this.location });
