@@ -58,20 +58,20 @@
   }
 </style>
 
-<template v-if="isVisible">
+<template>
   <div class="event">
     <div class="event_datetime">
-      <span class="event_weekday">{{date | moment('dddd')}}</span>
-      <span class="event_day">{{date | moment('D')}}</span>
-      <span class="event_month">{{date | moment('MMMM')}}</span>
-      <span class="event_year">{{date | moment('Y')}}</span>
-      <span class="event_time">{{date | moment('H:mm')}} Uhr</span>
+      <span class="event_weekday">{{event.date | moment('dddd')}}</span>
+      <span class="event_day">{{event.date | moment('D')}}</span>
+      <span class="event_month">{{event.date | moment('MMMM')}}</span>
+      <span class="event_year">{{event.date | moment('Y')}}</span>
+      <span class="event_time" v-if="!event.allDay">{{event.date | moment('H:mm')}} Uhr</span>
     </div>
     <div class="event_details">
-      <span class="event_title">{{title}}</span>
-      <span class="event_description" v-if="description">{{description}}</span>
+      <span class="event_title">{{event.title}}</span>
+      <span class="event_description" v-if="event.description">{{event.description}}</span>
       <div class="event_location">
-        <Location :location="location"></Location>
+        <Location :location="event.location"></Location>
       </div>
     </div>
   </div>
@@ -86,10 +86,12 @@ export default {
   name: 'Event',
   components: { Location },
   props: {
-    date: moment,
-    title: String,
-    description: String,
-    location: String,
+    event: {
+      date: moment,
+      title: String,
+      location: String,
+      allDay: Boolean,
+    },
   },
 };
 </script>
