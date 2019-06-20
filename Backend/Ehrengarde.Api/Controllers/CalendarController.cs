@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Ehrengarde.Api.Models;
 using Ehrengarde.Api.Services.Calendar;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,9 +17,9 @@ namespace Ehrengarde.Api.Controllers
         }
 
         [HttpGet]
-        public void GetPublic()
+        public async Task<List<Event>> GetPublic()
         {
-            _calendarService.GetPulbicCalendar();
+            return await _calendarService.GetPublicEvents();
         }
     }
 }

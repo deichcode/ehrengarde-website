@@ -1,5 +1,8 @@
+using System.Collections.Generic;
 using System.Reflection;
+using System.Threading.Tasks;
 using Ehrengarde.Api.Controllers;
+using Ehrengarde.Api.Models;
 using Ehrengarde.Api.Services.Calendar;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
@@ -41,11 +44,22 @@ namespace Ehrengarde.Api.Tests.Controllers
             }
             
             [Fact]
-            public void ShouldCallGetPublicOnCalendarService()
+            public async Task ShouldCallGetPublicOnCalendarService()
             {
-                _sut.GetPublic();
+                await _sut.GetPublic();
 
-                _calendarService.Verify(s => s.GetPulbicCalendar(), Times.Once);
+                _calendarService.Verify(s => s.GetPublicEvents(), Times.Once);
+            }
+
+            [Fact]
+            public async Task ShouldReturnEventsFromService()
+            {
+                var serviceResult = new List<Event>();
+                _calendarService.Setup(cs => cs.GetPublicEvents()).ReturnsAsync(serviceResult);
+                
+                var result = await _sut.GetPublic();
+
+                result.Should().BeEquivalentTo(serviceResult);
             }
         }
     }
