@@ -1,4 +1,6 @@
-using Ehrengarde.Api.Adapters.HttpAdapter;
+﻿using Ehrengarde.Api.Adapters.HttpAdapter;
+using Ehrengarde.Api.Adapters.ical.net.Calendar;
+using Ehrengarde.Api.Services.Calendar;
 using Ehrengarde.Api.Services.HttpService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,9 +23,11 @@ namespace Ehrengarde.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
+            services.AddSingleton<ICalendarService, CalendarService>();
             services.AddSingleton<IHttpService, HttpService>();
-
-            services.AddScoped<IHttpAdatper, HttpAdapter>();
+            services.AddSingleton<IHttpAdatper, HttpAdapter>();
+            services.AddSingleton<ICalendarAdapter, CalendarAdapter>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
