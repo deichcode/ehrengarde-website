@@ -5,10 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Folder Include="Models\Calendar" />
         <Folder Include="wwwroot\" />
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Ical.Net" Version="4.1.11" />
         <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0" />
