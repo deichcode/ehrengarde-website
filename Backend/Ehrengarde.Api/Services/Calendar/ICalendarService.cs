@@ -1,9 +1,11 @@
-using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Ehrengarde.Api.Models;
 
 namespace Ehrengarde.Api.Services.Calendar
 {
     public interface ICalendarService
     {
-        void GetPulbicCalendar();
+        Task<List<Event>> GetPublicEvents();
     }
 }
