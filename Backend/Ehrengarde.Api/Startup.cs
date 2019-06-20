@@ -1,4 +1,5 @@
 using Ehrengarde.Api.Adapters.HttpAdapter;
+using Ehrengarde.Api.Services.HttpService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,8 @@ namespace Ehrengarde.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSingleton<IHttpService, HttpService>();
+
             services.AddScoped<IHttpAdatper, HttpAdapter>();
         }
 
