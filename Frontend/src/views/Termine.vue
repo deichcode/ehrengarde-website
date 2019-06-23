@@ -40,7 +40,8 @@ export default {
     axios
       // .get('http://localhost:5000/api/Calendar')
       // .get('http://10.0.42.24:5000/api/Calendar')
-      .get('http://192.168.178.21:5000/api/Calendar')
+      // .get('http://192.168.178.21:5000/api/Calendar')
+      .get('http://172.20.10.3:5000/api/Calendar')
       .then((response) => {
         this.events = response.data.map(
           event => ({

@@ -6,6 +6,7 @@ import 'leaflet/dist/leaflet.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDirections } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import moment from 'moment';
 import router from './router';
 import App from './App.vue';
 
@@ -23,6 +24,9 @@ Vue.component('l-marker', LMarker);
 
 library.add(faDirections);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+const locale = window.navigator.language || window.navigator.userLanguage;
+moment.locale(locale);
 
 // eslint-disable-next-line no-underscore-dangle
 delete Icon.Default.prototype._getIconUrl;
