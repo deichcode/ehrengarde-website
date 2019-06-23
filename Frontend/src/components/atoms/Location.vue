@@ -1,37 +1,37 @@
 <style scoped lang="scss">
-  .map_wrapper {
-    padding-top: 10px;
-  }
+    .map_wrapper {
+        padding-top: 10px;
+    }
 </style>
 
 <style>
-  /*noinspection CssUnusedSymbol*/
-  .leaflet-control-attribution {
-    display: none;
-  }
+    /*noinspection CssUnusedSymbol*/
+    .leaflet-control-attribution {
+        display: none;
+    }
 </style>
 
 <template>
-  <div @click="tabZoom" style="height: 100%;">
-    <l-map
-      ref="locationMap"
-      :zoom="baseZoom"
-      :center="center"
-      :options="{
-        zoomControl: false,
-        dragging: !isMobile,
-        touchZoom: !isMobile,
-        doubleClickZoom: !isMobile,
-        scrollWheelZoom: !isMobile,
-        boxZoom: !isMobile,
-        keyboard: !isMobile,
-        tap: !isMobile,
-      }"
-    >
-      <l-tile-layer :url="url"></l-tile-layer>
-      <l-marker :lat-lng="center" ></l-marker>
-    </l-map>
-  </div>
+    <div @click="tabZoom" style="height: 100%;">
+        <l-map
+                ref="locationMap"
+                :zoom="baseZoom"
+                :center="center"
+                :options="{
+                    zoomControl: false,
+                    dragging: !isMobile,
+                    touchZoom: !isMobile,
+                    doubleClickZoom: !isMobile,
+                    scrollWheelZoom: !isMobile,
+                    boxZoom: !isMobile,
+                    keyboard: !isMobile,
+                    tap: !isMobile,
+                }"
+        >
+            <l-tile-layer :url="url"></l-tile-layer>
+            <l-marker :lat-lng="center"></l-marker>
+        </l-map>
+    </div>
 </template>
 
 <script>
@@ -39,7 +39,6 @@ import L from 'leaflet';
 import { OpenStreetMapProvider } from 'leaflet-geosearch';
 
 const provider = new OpenStreetMapProvider();
-
 
 export default {
   name: 'Location',
@@ -59,10 +58,12 @@ export default {
   },
   methods: {
     tabZoom() {
-      this.zoomOffset = (this.zoomOffset + 2) % 8;
-      this.$nextTick(() => {
-        this.$refs.locationMap.mapObject.setZoom(this.baseZoom - this.zoomOffset);
-      });
+      if (this.isMobile) {
+        this.zoomOffset = (this.zoomOffset + 2) % 8;
+        this.$nextTick(() => {
+          this.$refs.locationMap.mapObject.setZoom(this.baseZoom - this.zoomOffset);
+        });
+      }
     },
     async getGeolocation() {
       const result = await provider.search({ query: this.location });
@@ -70,8 +71,7 @@ export default {
     },
   },
   async mounted() {
-    const center = await this.getGeolocation();
-    this.center = center;
+    this.center = await this.getGeolocation();
   },
 };
 

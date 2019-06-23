@@ -17,13 +17,25 @@ namespace Ehrengarde.Api
             Configuration = configuration;
         }
 
+        private const string AllowAnyOrigin = "_allowLocalhostOrigin";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(AllowAnyOrigin,
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            
+
             services.AddSingleton<ICalendarService, CalendarService>();
             services.AddSingleton<IHttpService, HttpService>();
             services.AddSingleton<IHttpAdatper, HttpAdapter>();
@@ -35,14 +47,15 @@ namespace Ehrengarde.Api
         {
             if (env.IsDevelopment())
             {
+                app.UseCors(AllowAnyOrigin);
                 app.UseDeveloperExceptionPage();
             }
             else
             {
                 app.UseHsts();
+                app.UseHttpsRedirection();
             }
 
-            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

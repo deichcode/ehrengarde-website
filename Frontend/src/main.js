@@ -1,10 +1,17 @@
 import Vue from 'vue';
 import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
 import { Icon } from 'leaflet';
-import App from './App.vue';
-import router from './router';
 import 'normalize.css';
 import 'leaflet/dist/leaflet.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faDirections } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import router from './router';
+import App from './App.vue';
+
+const markerIcon2 = require('leaflet/dist/images/marker-icon-2x.png');
+const markerIcon = require('leaflet/dist/images/marker-icon.png');
+const markerShadow = require('leaflet/dist/images/marker-shadow.png');
 
 Vue.config.productionTip = false;
 
@@ -14,12 +21,15 @@ Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
 
-delete Icon.Default.prototype._getIconUrl;
+library.add(faDirections);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
+// eslint-disable-next-line no-underscore-dangle
+delete Icon.Default.prototype._getIconUrl;
 Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+  iconRetinaUrl: markerIcon2,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
 });
 
 new Vue({
