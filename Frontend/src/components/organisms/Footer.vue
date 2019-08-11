@@ -19,7 +19,7 @@ export default {
   footer {
     background: $white;
     font-size: 0.6rem;
-    padding: $outer-space;
+    padding: $default-spacer;
     flex-shrink: 0;
     text-align: center;
     color: $gray;
