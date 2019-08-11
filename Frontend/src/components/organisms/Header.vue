@@ -21,7 +21,7 @@ export default {
 <style scoped lang="scss">
   header {
     background: $light-blue;
-    padding: $outer-space;
+    padding: $default-spacer;
   }
 
   .wappen {
