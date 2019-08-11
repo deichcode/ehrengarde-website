@@ -5,7 +5,7 @@
     background-color: $white;
     display: flex;
     justify-content: space-evenly;
-    padding: $outer-space;
+    padding: $default-spacer;
     padding-bottom: 0;
     flex-wrap: wrap;
     z-index: 500;

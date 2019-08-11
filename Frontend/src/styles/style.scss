@@ -3,7 +3,6 @@
 }
 
 p {
-  padding: 0 $outer-space;
   color: $light-gray;
   line-height: 1.2;
 }
@@ -27,5 +26,5 @@ main {
 }
 
 .content {
-  padding: 0 $outer-space;
+  padding: 0 $default-spacer;
 }
