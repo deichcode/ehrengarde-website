@@ -45,8 +45,8 @@ namespace Ehrengarde.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseDefaultFiles();
             app.UseStaticFiles();
+
             if (env.IsDevelopment())
             {
                 app.UseCors(AllowAnyOrigin);
@@ -58,7 +58,22 @@ namespace Ehrengarde.Api
                 app.UseHttpsRedirection();
             }
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{action=Index}/{id?}");
+            });
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.DefaultPage = "/index.html";
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:8080");
+                }
+            });
         }
     }
 }
