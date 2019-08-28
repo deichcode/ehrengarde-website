@@ -1,12 +1,16 @@
-﻿using Ehrengarde.Api.Adapters.HttpAdapter;
+﻿using System.Diagnostics;
+using System.IO;
+using Ehrengarde.Api.Adapters.HttpAdapter;
 using Ehrengarde.Api.Adapters.ical.net.Calendar;
 using Ehrengarde.Api.Services.Calendar;
 using Ehrengarde.Api.Services.HttpService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 namespace Ehrengarde.Api
 {
@@ -45,8 +49,6 @@ namespace Ehrengarde.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseStaticFiles();
-
             if (env.IsDevelopment())
             {
                 app.UseCors(AllowAnyOrigin);
@@ -60,6 +62,13 @@ namespace Ehrengarde.Api
 
             app.UseMvc();
 
+            ServeLetsEncryptFiles(app);
+            ServeSpaFiles(app, env);
+        }
+
+        private static void ServeSpaFiles(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            app.UseStaticFiles();
             app.UseSpa(spa =>
             {
                 spa.Options.DefaultPage = "/index.html";
@@ -68,6 +77,26 @@ namespace Ehrengarde.Api
                 {
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:8080");
                 }
+            });
+        }
+
+        private static void ServeLetsEncryptFiles(IApplicationBuilder app)
+        {
+            const string acmeRequestPath = "/.well-known/acme-challenge";
+            var acmeChallengePath =
+                Path.Combine(Directory.GetCurrentDirectory(), @".well-known/acme-challenge");
+            Trace.WriteLine($"ACME Challenge Path: {acmeChallengePath}");
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            {
+                FileProvider = new PhysicalFileProvider(acmeChallengePath),
+                RequestPath = new PathString(acmeRequestPath)
+            });
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(acmeChallengePath),
+                RequestPath = new PathString(acmeRequestPath),
+                ServeUnknownFileTypes = true // serve extensionless file
             });
         }
     }
