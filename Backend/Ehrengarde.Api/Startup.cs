@@ -62,7 +62,6 @@ namespace Ehrengarde.Api
 
             app.UseMvc();
 
-            ServeLetsEncryptFiles(app);
             ServeSpaFiles(app, env);
         }
 
@@ -77,26 +76,6 @@ namespace Ehrengarde.Api
                 {
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:8080");
                 }
-            });
-        }
-
-        private static void ServeLetsEncryptFiles(IApplicationBuilder app)
-        {
-            const string acmeRequestPath = "/.well-known/acme-challenge";
-            var acmeChallengePath =
-                Path.Combine(Directory.GetCurrentDirectory(), @".well-known/acme-challenge");
-            Trace.WriteLine($"ACME Challenge Path: {acmeChallengePath}");
-            app.UseDirectoryBrowser(new DirectoryBrowserOptions
-            {
-                FileProvider = new PhysicalFileProvider(acmeChallengePath),
-                RequestPath = new PathString(acmeRequestPath)
-            });
-
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(acmeChallengePath),
-                RequestPath = new PathString(acmeRequestPath),
-                ServeUnknownFileTypes = true // serve extensionless file
             });
         }
     }
