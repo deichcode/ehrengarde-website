@@ -1,7 +1,6 @@
 <template>
   <footer>
     <router-link to="/impressum">Impressum</router-link>
-    <p>_</p>
     <p>Ehrengarde&nbsp;der&nbsp;Stadt&nbsp;Neuwied&nbsp;e.V.
       Geschäftsführer:&nbsp;Marcel&nbsp;Thran
       Eingetragen&nbsp;beim&nbsp;Amtsgericht unter&nbsp;Vereinsregister&nbsp;Nr.&nbsp;11338
@@ -29,6 +28,7 @@ export default {
     }
 
     p {
+      margin-top: $double-default-spacer;
       color: inherit;
     }
   }
