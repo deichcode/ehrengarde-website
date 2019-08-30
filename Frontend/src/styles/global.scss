@@ -2,9 +2,19 @@
   font-family: superclarendon, serif;
 }
 
+html {
+  background-color: $white;
+}
+
 body {
   font-size: 14px;
   margin: 0;
+  background-color: $white;
+}
+
+#page-wrapper{
+  min-height: 100%;
+  min-width: 100%;
   background-color: $light-red;
 }
 
