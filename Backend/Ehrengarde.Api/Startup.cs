@@ -12,8 +12,11 @@ namespace Ehrengarde.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IHostingEnvironment _environment;
+
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
+            _environment = environment;
             Configuration = configuration;
         }
 
@@ -35,8 +38,15 @@ namespace Ehrengarde.Api
                     });
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            if (_environment.IsDevelopment())
+            {
+                services.AddSingleton<ICalendarService, FakeCalendarService>();
+            }
+            else
+            {
+                services.AddSingleton<ICalendarService, CalendarService>();
+            }
 
-            services.AddSingleton<ICalendarService, CalendarService>();
             services.AddSingleton<IHttpService, HttpService>();
             services.AddSingleton<IHttpAdatper, HttpAdapter>();
             services.AddSingleton<ICalendarAdapter, CalendarAdapter>();
@@ -57,6 +67,22 @@ namespace Ehrengarde.Api
             }
 
             app.UseMvc();
+
+            ServeSpaFiles(app, env);
+        }
+
+        private static void ServeSpaFiles(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            app.UseStaticFiles();
+            app.UseSpa(spa =>
+            {
+                spa.Options.DefaultPage = "/index.html";
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:8080");
+                }
+            });
         }
     }
 }

@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Models\Calendar" />
+        <Folder Include="wwwroot" />
         <Folder Include="wwwroot\" />
     </ItemGroup>
 
@@ -14,6 +14,8 @@
         <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
     </ItemGroup>
 
 </Project>

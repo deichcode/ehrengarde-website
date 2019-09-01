@@ -8,7 +8,8 @@
     padding: $default-spacer;
     padding-bottom: 0;
     flex-wrap: wrap;
-    z-index: 500;
+    box-shadow: 0 3px 6px $shadow;
+    z-index: 20;
 
     a {
       @include navigation-link;

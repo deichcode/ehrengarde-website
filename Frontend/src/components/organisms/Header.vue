@@ -1,27 +1,10 @@
-<template>
-  <header>
-    <div class="wappen">
-      <Wappen corps="aktive"></Wappen>
-      <Wappen corps="piccolos"></Wappen>
-      <Wappen corps="reservisten"></Wappen>
-      <Wappen corps="eos"></Wappen>
-    </div>
-    <router-link to="/"><h1>Ehrengarde der Stadt Neuwied&nbsp;e.V.</h1></router-link>
-  </header>
-</template>
-
-<script>
-import Wappen from '../atoms/Wappen.vue';
-
-export default {
-  components: { Wappen },
-};
-</script>
-
 <style scoped lang="scss">
   header {
     background: $light-blue;
     padding: $default-spacer;
+    box-shadow: 0px 3px 6px $shadow;
+    position: relative;
+    z-index: 30;
   }
 
   .wappen {
@@ -45,3 +28,23 @@ export default {
     margin-bottom: 10px;
   }
 </style>
+
+<template>
+  <header>
+    <div class="wappen">
+      <Wappen corps="aktive"></Wappen>
+      <Wappen corps="piccolos"></Wappen>
+      <Wappen corps="reservisten"></Wappen>
+      <Wappen corps="eos"></Wappen>
+    </div>
+    <router-link to="/"><h1>Ehrengarde der Stadt Neuwied&nbsp;e.V.</h1></router-link>
+  </header>
+</template>
+
+<script>
+import Wappen from '../atoms/Wappen.vue';
+
+export default {
+  components: { Wappen },
+};
+</script>

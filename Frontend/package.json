@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:production": "npm run build",
+    "build:develop": "vue-cli-service build --mode develop",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -18,7 +20,6 @@
     "leaflet-geosearch": "^2.7.0",
     "mobile-device-detect": "^0.2.3",
     "moment": "^2.24.0",
-    "momentjs": "^2.0.0",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.10",
     "vue-moment": "^4.0.0",

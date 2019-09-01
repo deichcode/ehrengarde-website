@@ -5,6 +5,7 @@ namespace Ehrengarde.Api.Models
 {
     public class Event
     {
+        public Event(){}
         public Event(CalendarEvent calendarEvent)
         {
             Uid = calendarEvent.Uid;
@@ -16,12 +17,12 @@ namespace Ehrengarde.Api.Models
             Location = calendarEvent.Location ?? "";
         }
 
-        public string Uid { get; }
-        public string Title { get; }
-        public string Description { get; }
-        public DateTime? Start { get; }
-        public DateTime? End { get; }
-        public bool IsAllDay { get; }
-        public string Location { get; }
+        public string Uid { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public DateTime? Start { get; set; }
+        public DateTime? End { get; set; }
+        public bool IsAllDay { get; set; }
+        public string Location { get; set; }
     }
 }

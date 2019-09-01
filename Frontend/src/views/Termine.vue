@@ -1,20 +1,28 @@
-<style scoped>
+<style scoped lang="scss">
+  .events_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 </style>
 
 <template>
-    <div class="content">
-        <h2 class="title">Termine</h2>
-        <Event v-for="event in currentEvents"
-               :key="event.uid"
-               :title="event.title"
-               :description="event.description"
-               :start="event.start"
-               :end="event.end"
-               :is-all-day="event.isAllDay"
-               :location="event.location">
-        </Event>
+  <div class="content">
+    <h2 class="title">Termine</h2>
+    <div class="events_wrapper">
+      <Event v-for="event in currentEvents"
+             :key="event.uid"
+             :title="event.title"
+             :description="event.description"
+             :start="event.start"
+             :end="event.end"
+             :is-all-day="event.isAllDay"
+             :location="event.location">
+      </Event>
     </div>
+  </div>
 </template>
 
 <script>
@@ -38,10 +46,7 @@ export default {
   },
   mounted() {
     axios
-      // .get('http://localhost:5000/api/Calendar')
-      // .get('http://10.0.42.24:5000/api/Calendar')
-      // .get('http://192.168.178.21:5000/api/Calendar')
-      .get('http://172.20.10.3:5000/api/Calendar')
+      .get(`${process.env.VUE_APP_API}/calendar`)
       .then((response) => {
         this.events = response.data.map(
           event => ({
