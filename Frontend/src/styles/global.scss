@@ -1,5 +1,7 @@
 * {
   font-family: superclarendon, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -38,6 +40,20 @@ a {
     width: 100%;
     left: 0;
   }
+}
+
+@mixin dotted_border {
+  border-style: double;
+}
+
+.dotted_border_bottom_thin {
+  @include dotted_border;
+  border-width: 0 0 2px 0;
+}
+
+.dotted_border_top_thin {
+  @include dotted_border;
+  border-width: 2px 0 0 0;
 }
 
 p {
