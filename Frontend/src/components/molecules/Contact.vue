@@ -1,66 +1,65 @@
 <style scoped lang="scss">
-    .contact {
-        height: 85px;
-        background: $light-blue;
-        display: flex;
-        margin-bottom: 15px;
-        padding: 5px;
-        flex: 0 0 300px;
-        color: $white;
-        flex-basis: calc(100% - 10px);
+  .contact {
+    display: flex;
+    margin-bottom: 15px;
+    flex: 0 1 280px;
+    flex-wrap: wrap;
+    color: $white;
 
-        .portrait {
-            width: 85px;
-            height: 85px;
-            border-radius: 50%;
-        }
-
-        .infos {
-            padding-left: $default-spacer;
-
-            .position {
-                font-size: 0.7rem;
-                margin: 15px 0 0 0;
-            }
-
-            .name {
-                font-size: 1rem;
-                margin: 8px 0 0 0;
-            }
-
-            .email {
-                font-size: 0.6rem;
-                margin: 5px 0 0 0;
-
-                a {
-                    color: inherit;
-                    text-decoration: none;
-                }
-            }
-        }
+    .portrait {
+      width: 155px;
+      height: 155px;
+      border-radius: 50%;
     }
 
-    /*@media (max-width: 400px) {*/
-        .contact{
-            flex-direction: column;
-        }
-    /*}*/
+
+    .position {
+      font-size: 0.857rem;
+      margin: 15px 0 0 0;
+    }
+
+    .name {
+      font-size: 1.571rem;
+      margin: 0 0 10px 0;
+    }
+
+    .email {
+      font-size: 0.6rem;
+      margin: 5px 0 0 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  /*@media (max-width: 400px) {*/
+  .contact {
+    flex-direction: column;
+  }
+
+  /*}*/
 </style>
 
 <template>
-    <div class="contact">
-        <img class="portrait" :src="src" :alt="altText">
-        <div class="infos">
-            <p class="position">{{position}}</p>
-            <p class="name">{{name}}</p>
-            <p class="email"><a :href="mailtoLink">{{email}}</a></p>
-        </div>
-    </div>
+  <Card class="contact">
+    <img class="portrait" :src="src" :alt="altText">
+    <DottedBorder/>
+    <p class="position">{{position}}</p>
+    <p class="name">{{name}}</p>
+    <a :href="mailtoLink"><font-awesome-icon icon="envelope" :style="{ color: 'white'}"/></a>
+    <p class="email"><a :href="mailtoLink">{{email}}</a></p>
+  </Card>
 </template>
 
 <script>
+import Card from '../atoms/Card.vue';
+import DottedBorder from '../atoms/DottedBorder.vue';
+
 export default {
   name: 'Contact',
+  components: { DottedBorder, Card },
   props: {
     src: String,
     name: String,
