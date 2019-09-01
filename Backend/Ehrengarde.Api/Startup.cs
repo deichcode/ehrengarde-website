@@ -1,23 +1,22 @@
-﻿using System.Diagnostics;
-using System.IO;
-using Ehrengarde.Api.Adapters.HttpAdapter;
+﻿using Ehrengarde.Api.Adapters.HttpAdapter;
 using Ehrengarde.Api.Adapters.ical.net.Calendar;
 using Ehrengarde.Api.Services.Calendar;
 using Ehrengarde.Api.Services.HttpService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileProviders;
 
 namespace Ehrengarde.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IHostingEnvironment _environment;
+
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
+            _environment = environment;
             Configuration = configuration;
         }
 
@@ -39,8 +38,15 @@ namespace Ehrengarde.Api
                     });
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            if (_environment.IsDevelopment())
+            {
+                services.AddSingleton<ICalendarService, FakeCalendarService>();
+            }
+            else
+            {
+                services.AddSingleton<ICalendarService, CalendarService>();
+            }
 
-            services.AddSingleton<ICalendarService, CalendarService>();
             services.AddSingleton<IHttpService, HttpService>();
             services.AddSingleton<IHttpAdatper, HttpAdapter>();
             services.AddSingleton<ICalendarAdapter, CalendarAdapter>();
