@@ -36,6 +36,18 @@ Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
+router.beforeEach((to, from, next) => {
+  let title = '';
+  const defaultName = 'Ehrengarde der Stadt Neuwied e.V.';
+  if (to.meta.title) {
+    title = `${to.name} – ${defaultName}`;
+  } else {
+    title = defaultName;
+  }
+  document.title = title;
+  next();
+});
+
 new Vue({
   router,
   render: h => h(App),
