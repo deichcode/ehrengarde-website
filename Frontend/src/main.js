@@ -4,7 +4,7 @@ import { Icon } from 'leaflet';
 import 'normalize.css';
 import 'leaflet/dist/leaflet.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDirections, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { faDirections, faCalendarAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import moment from 'moment';
 import router from './router';
@@ -22,7 +22,7 @@ Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
 
-library.add(faDirections, faCalendarAlt);
+library.add(faDirections, faCalendarAlt, faEnvelope);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 const locale = window.navigator.language || window.navigator.userLanguage;
