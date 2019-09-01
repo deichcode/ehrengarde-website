@@ -10,8 +10,7 @@
   <div class="content">
     <h2 class="title">Kontakt zur Garde</h2>
     <p>
-      Sie möchten uns in Kontakt treten? Wir freuen uns auf ihre Nachricht per E-Mail.
-      Für generelle Fragen können Sie sich gerne an einen der folgenden Personen wenden.
+      Sie möchten mit uns in Kontakt treten? Wir freuen uns auf ihre E-Mail.
     </p>
     <div id="kontakte">
       <Contact :src="marcel" position="Geschäftsführer" name="Marcel Thran"

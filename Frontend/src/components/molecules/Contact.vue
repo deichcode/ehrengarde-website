@@ -15,7 +15,8 @@
 
     .position {
       font-size: 0.857rem;
-      margin: 15px 0 0 0;
+      margin: 10px 0 0 0;
+      padding-top: 10px;
     }
 
     .name {
@@ -45,8 +46,7 @@
 <template>
   <Card class="contact">
     <img class="portrait" :src="src" :alt="altText">
-    <DottedBorder/>
-    <p class="position">{{position}}</p>
+    <p class="position dotted_border_top_thin">{{position}}</p>
     <p class="name">{{name}}</p>
     <a :href="mailtoLink"><font-awesome-icon icon="envelope" :style="{ color: 'white'}"/></a>
     <p class="email"><a :href="mailtoLink">{{email}}</a></p>
@@ -55,11 +55,10 @@
 
 <script>
 import Card from '../atoms/Card.vue';
-import DottedBorder from '../atoms/DottedBorder.vue';
 
 export default {
   name: 'Contact',
-  components: { DottedBorder, Card },
+  components: { Card },
   props: {
     src: String,
     name: String,
