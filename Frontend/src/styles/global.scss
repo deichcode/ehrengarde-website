@@ -42,18 +42,18 @@ a {
   }
 }
 
-@mixin dotted_border {
-  border-style: double;
+@mixin separation_border {
+  border-style: solid;
 }
 
-.dotted_border_bottom_thin {
-  @include dotted_border;
-  border-width: 0 0 2px 0;
+.separation_border_bottom_thin {
+  @include separation_border;
+  border-width: 0 0 1px 0;
 }
 
-.dotted_border_top_thin {
-  @include dotted_border;
-  border-width: 2px 0 0 0;
+.separation_border_top_thin {
+  @include separation_border;
+  border-width: 1px 0 0 0;
 }
 
 p {

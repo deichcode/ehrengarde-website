@@ -52,7 +52,7 @@
 <template>
   <Card class="contact">
     <img class="portrait" :src="src" :alt="altText">
-    <p class="position dotted_border_top_thin">{{position}}</p>
+    <p class="position separation_border_top_thin">{{position}}</p>
     <p class="name">{{name}}</p>
     <a :href="mailtoLink"><font-awesome-icon icon="envelope" :style="{ color: 'white'}"/></a>
     <p class="email"><a :href="mailtoLink">{{email}}</a></p>
