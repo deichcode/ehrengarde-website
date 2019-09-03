@@ -18,7 +18,7 @@
       <Contact :src="markus" position="Präsident" name="Markus Schröder"
                email="praesident@ehrengarde-neuwied.de"></Contact>
       <Contact :src="alex" position="Kommandeur" name="Alexander Wertgen"
-               email="kommandeu@ehrengarde-neuwied.de"></Contact>
+               email="kommandeur@ehrengarde-neuwied.de"></Contact>
     </div>
   </div>
 </template>
