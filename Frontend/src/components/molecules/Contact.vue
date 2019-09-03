@@ -51,7 +51,7 @@
 
 <template>
   <Card class="contact">
-    <img class="portrait" :src="src" :alt="altText">
+    <img class="portrait" :src="image" :alt="altText">
     <p class="position separation_border_top_thin">{{position}}</p>
     <p class="name">{{name}}</p>
     <a :href="mailtoLink"><font-awesome-icon icon="envelope" :style="{ color: 'white'}"/></a>
@@ -66,7 +66,7 @@ export default {
   name: 'Contact',
   components: { Card },
   props: {
-    src: String,
+    image: String,
     name: String,
     position: String,
     email: String,
