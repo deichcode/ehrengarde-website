@@ -2,9 +2,15 @@
   .contact {
     display: flex;
     margin-bottom: 15px;
+    color: $white;
     flex: 0 1 280px;
     flex-wrap: wrap;
-    color: $white;
+
+    .card {
+      .card-content {
+        padding-bottom: 10px;
+      }
+    }
 
     .portrait {
       width: 155px;
