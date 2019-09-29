@@ -3,6 +3,7 @@
     color: white;
     text-align: center;
     font-size: 2.0rem;
+    margin-bottom: 0px;
 
   }
 </style>
