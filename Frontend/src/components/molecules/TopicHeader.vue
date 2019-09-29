@@ -21,8 +21,11 @@
             white-space: pre-wrap;
             font-size: 1.85rem;
         };
-    };
-
+    }
+        .beschreibung{
+            hyphens: auto;
+            text-align: justify
+        }
 };
 </style>
 

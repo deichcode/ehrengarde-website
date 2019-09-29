@@ -14,12 +14,12 @@
 
 <template>
   <div class="content">
-    <p class="title">Die Korps der Garde</p>
+    <p class="title">Die Corps der Garde</p>
     <Separator/>
     <div class="corps">
       <TopicHeader id="piccolos" :src="piccolos" name="DAS PICCOLOCORPS"
       beschreibung="Den Piccolotanz üben die Kinder mit Hilfe ihrer Piccolobetreuung ein. Hierbei ist es der Garde
-      besonders wichtig, dass die Kinder auch Kind sein dürfen. Perfektion liegt dem Piccolokorps fern. Diese liegt
+      besonders wichtig, dass die Kinder auch Kind sein dürfen. Perfektion liegt dem Piccolocorps fern. Diese liegt
       eher in der Spontanität und ihr ist Genüge getan, wenn die Kleinen mit Ende der Musik ihren Tanz
       vollendet haben. Mit 14 Jahren haben die Piccolos dann ausreichende „Flaschenreifung“ genossen, um voller
       Tatendrang in ihr Gardeleben als aktives Mariechen oder aktiver Gardist der Ehrengarde durchzustarten. "/>
@@ -37,10 +37,10 @@
 
       <TopicHeader id="aktive" :src="garde" name="DIE AKTIVE GARDE"
       beschreibung="Manch einer denkt wohl, dass es sich beim „Aktiven Corps“ um die jungen Wilden des Vereins handelt.
-      Weit gefehlt. Denn die Zugehörigkeit zum Aktiven Korps richtet sich weniger nach dem Alter, sondern vielmehr
+      Weit gefehlt. Denn die Zugehörigkeit zum Aktiven Corps richtet sich weniger nach dem Alter, sondern vielmehr
       nach dem Grad der Aktivität. Wer also etwas mehr Zeit investieren möchte, ist hier genau richtig. Ob beim
       eifrigen Tanzbein schwingen im Gardetanz oder bei Serviceeinsätzen wie z. B. beim Sommerfest des
-      Festausschusses, dem Deichstadtfest oder im Heerlager bei den Markttagen – das Aktive Korps ist immer im
+      Festausschusses, dem Deichstadtfest oder im Heerlager bei den Markttagen – das Aktive Corps ist immer im
       Einsatz. Wenn Du mitmachen möchtest, sprich uns doch einfach bei einem unserer Auftritte an, schau bei den Proben
       vorbei oder schreib uns, wir freuen uns auf jedes neue Gesicht."/>
       <Contacts :contacts="[
@@ -65,14 +65,14 @@
       <Separator/>
 
       <TopicHeader id="eos" :src="ehrenoffiziere" name="DIE EHRENOFFIZIERE"
-      beschreibung="Seit 2002 leitet Hans-Wilhelm Schaback das Korps als Kommandeur und ist ein wichtiges Bindeglied
+      beschreibung="Seit 2002 leitet Hans-Wilhelm Schaback das Corps als Kommandeur und ist ein wichtiges Bindeglied
       zwischen den Ehrenoffizieren und der restlichen Garde und leitet als Mitglied des erweiterten Vorstandes
-      die Geschicke des Vereins mit. Neben der ideellen und finanziellen Unterstützung stellt das Ehrenoffizierskorps
+      die Geschicke des Vereins mit. Neben der ideellen und finanziellen Unterstützung stellt das Ehrenoffizierscorps
       bei der Traditionellen Gardesitzung den Elferrat. Aber viele der Ehrenoffiziere tragen auch Uniform und
       unterstützen die Garde bei ihren verschiedenen Auftritten im Karneval und der Historie. Traditionell werden
       ein bis zwei Ehrenoffiziere pro Jahr neu ernannt. Die Offiziersrunde schlägt in jedem Jahr verdiente Mitglieder
        der Garde oder verdiente Karnevalisten aus Politik und Wirtschaft vor. Über die Vorschläge wird innerhalb des
-       Ehrenoffizierskorps abgestimmt. "/>
+       Ehrenoffizierscorps abgestimmt. "/>
       <Contacts :contacts="[
       {image: platzhalterM,
       position: 'Kommandeur',

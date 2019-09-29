@@ -8,6 +8,10 @@
         }
 
     }
+    p{
+        hyphens: auto;
+        text-align: justify
+    }
 </style>
 
 <template>
