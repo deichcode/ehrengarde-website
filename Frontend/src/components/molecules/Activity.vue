@@ -3,7 +3,7 @@
         margin-left: -10px;
         margin-right: -10px;
 
-        .foto{
+        .photo{
             width: 100%;
         }
 
@@ -17,7 +17,7 @@
 <template>
     <div class="freizeit">
         <div class="imagecontainer">
-        <img class="foto" :src="src" alt="Platzhalter für Foto">
+        <img class="photo" :src="src" alt="Platzhalter für Foto">
         </div>
         <p class="beschreibung">{{beschreibung}}</p>
     </div>

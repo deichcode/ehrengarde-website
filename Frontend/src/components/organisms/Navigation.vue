@@ -20,13 +20,8 @@
 <template>
   <nav>
     <router-link to="/">Start</router-link>
-<!--    |-->
     <router-link to="/kontakte">Kontakte</router-link>
-<!--    |-->
     <router-link to="/corps">Corps</router-link>
-<!--    |-->
-<!--    <router-link to="/hofstaat">Hofstaat</router-link>-->
-<!--    |-->
     <router-link to="/termine">Termine</router-link>
   </nav>
 </template>

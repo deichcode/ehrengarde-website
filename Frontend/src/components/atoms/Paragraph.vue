@@ -1,0 +1,17 @@
+<style scoped lang="scss">
+  .paragraph{
+    hyphens: auto;
+    column-width: 310px;
+  }
+</style>
+
+<template>
+<p class="paragraph">
+  <slot></slot></p>
+</template>
+
+<script>
+export default {
+  name: 'Paragraph',
+};
+</script>
