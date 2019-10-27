@@ -18,15 +18,6 @@
   a {
     text-decoration: none;
   }
-
-  h1 {
-    font-family: FetteUNZFraktur, serif;
-    text-align: center;
-    font-size: 2rem;
-    color: $white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 </style>
 
 <template>
@@ -37,14 +28,17 @@
       <Wappen corps="reservisten"></Wappen>
       <Wappen corps="eos"></Wappen>
     </div>
-    <router-link to="/"><h1>Ehrengarde der Stadt Neuwied&nbsp;e.V.</h1></router-link>
+    <router-link to="/">
+      <Headline :level=1 styling="site-title">Ehrengarde der Stadt Neuwied&nbsp;e.V.</Headline>
+    </router-link>
   </header>
 </template>
 
 <script>
 import Wappen from '../atoms/Wappen.vue';
+import Headline from '../atoms/Headline.vue';
 
 export default {
-  components: { Wappen },
+  components: { Headline, Wappen },
 };
 </script>

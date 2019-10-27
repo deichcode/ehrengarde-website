@@ -15,7 +15,7 @@
 
 <template>
   <div class="content">
-    <h2 class="title">Impressum</h2>
+    <Headline :level=2 styling="page-title">Impressum</Headline>
     <div class="wrapper">
       <Card class="card">
         <span class="paragraph_sign">§</span>
@@ -47,9 +47,10 @@
 
 <script>
 import Card from '../components/atoms/Card.vue';
+import Headline from '../components/atoms/Headline.vue';
 
 export default {
   name: 'Impressum',
-  components: { Card },
+  components: { Headline, Card },
 };
 </script>

@@ -10,7 +10,7 @@
 
 <template>
   <div class="content">
-    <h2 class="title">Termine</h2>
+    <Headline :level=2 styling="page-title">Termine</Headline>
     <div class="events_wrapper">
       <Event v-for="event in currentEvents"
              :key="event.uid"
@@ -29,10 +29,11 @@
 import moment from 'moment';
 import axios from 'axios';
 import Event from '../components/molecules/Event.vue';
+import Headline from '../components/atoms/Headline.vue';
 
 export default {
   name: 'Termine',
-  components: { Event },
+  components: { Headline, Event },
   data() {
     return {
       events: [],

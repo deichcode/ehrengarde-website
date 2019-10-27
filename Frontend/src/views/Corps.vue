@@ -4,17 +4,11 @@
     flex-direction: column;
   }
 
-  p{
-    color: white;
-    text-align: center;
-    font-size: 2.0rem;
-    margin-bottom: 0px;
-  }
 </style>
 
 <template>
   <div class="content">
-    <p class="title">Die Corps der Garde</p>
+    <Headline styling="page-title" :level=2>Die Corps der Garde</Headline>
     <Separator/>
     <div class="corps">
       <TopicHeader id="piccolos" :src="piccolos" title="Die Piccolos"/>
@@ -135,10 +129,12 @@ import freizeitPicccolo from '../assets/photos/2019/freizeitPiccolo.jpg';
 import alex from '../assets/photos/potraits/alexander.jpg';
 import platzhalterM from '../assets/photos/potraits/platzhalterM.jpg';
 import Paragraph from '../components/atoms/Paragraph.vue';
+import Headline from '../components/atoms/Headline.vue';
 
 export default {
   name: 'Corps',
   components: {
+    Headline,
     Paragraph,
     Contacts,
 

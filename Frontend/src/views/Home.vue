@@ -1,16 +1,6 @@
-<style scoped lang="scss">
-  p{
-    color: white;
-    text-align: center;
-    font-size: 2.0rem;
-    margin-bottom: 0px;
-
-  }
-</style>
-
 <template>
   <div class="content">
-    <p>Wilkommen bei der Garde</p>
+    <Headline :level=2 styling="page-title">Wilkommen bei der Garde</Headline>
     <Separator></Separator>
     <TopicHeader :src="karneval" title="Der Karneval"/>
     <Paragraph>
@@ -77,6 +67,7 @@ import freizeit from '../assets/photos/2019/freizeitPiccolo.jpg';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Separator from '../components/atoms/Separator.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
+import Headline from '../components/atoms/Headline.vue';
 
 export default {
   name: 'home',

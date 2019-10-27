@@ -11,7 +11,7 @@
 
 <template>
   <div class="content">
-    <h2 class="title">Datenschutz</h2>
+    <Headline :level=2 styling="page-title">Datenschutz</Headline>
     <div class="wrapper">
       <Card class="card">
         <p>
@@ -25,9 +25,10 @@
 
 <script>
 import Card from '../components/atoms/Card.vue';
+import Headline from '../components/atoms/Headline.vue';
 
 export default {
   name: 'Datenschutz',
-  components: { Card },
+  components: { Headline, Card },
 };
 </script>

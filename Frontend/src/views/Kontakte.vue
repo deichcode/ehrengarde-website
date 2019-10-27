@@ -3,7 +3,7 @@
 
 <template>
   <div class="content">
-    <h2 class="title">Kontakt zur Garde</h2>
+    <Headline :level=2 styling="page-title">Kontakt zur Garde</Headline>
     <p>
       Sie möchten mit uns in Kontakt treten? Wir freuen uns auf ihre E-Mail.
     </p>
@@ -18,10 +18,11 @@ import ImageMarcel from '../assets/photos/potraits/marcel.jpg';
 import ImageMarkus from '../assets/photos/potraits/markus.jpg';
 import ImageAlex from '../assets/photos/potraits/alexander.jpg';
 import Contacts from '../components/organisms/Contacts.vue';
+import Headline from '../components/atoms/Headline.vue';
 
 export default {
   name: 'Kontakte',
-  components: { Contacts },
+  components: { Headline, Contacts },
   data() {
     return {
       marcel: {
