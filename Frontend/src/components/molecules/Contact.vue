@@ -1,16 +1,10 @@
 <style scoped lang="scss">
-  .contact {
+  .card {
     display: flex;
     margin-bottom: 15px;
     color: $white;
     flex: 0 1 280px;
     flex-wrap: wrap;
-
-    .card {
-      .card-content {
-        padding-bottom: 10px;
-      }
-    }
 
     .portrait {
       width: 155px;
@@ -18,10 +12,12 @@
       border-radius: 50%;
     }
 
-
     .position {
       font-size: 0.857rem;
       margin: 10px 0 0 0;
+    }
+
+    .position--with-image {
       padding-top: 10px;
     }
 
@@ -32,7 +28,7 @@
 
     .email {
       font-size: 0.6rem;
-      margin: 5px 0 0 0;
+      margin: 5px 0 10px 0;
 
       a {
         color: inherit;
@@ -51,10 +47,18 @@
 
 <template>
   <Card class="contact">
-    <img class="portrait" :src="image" :alt="altText">
-    <p class="position separation_border_top_thin">{{position}}</p>
+    <img class="portrait" :src="image" :alt="altText" v-if="image">
+    <p :class="{
+        'position':true,
+        'position--with-image': image,
+        'separation_border_top_thin': image
+    }">
+      {{position}}
+    </p>
     <p class="name">{{name}}</p>
-    <a :href="mailtoLink"><font-awesome-icon icon="envelope" :style="{ color: 'white'}"/></a>
+    <a :href="mailtoLink">
+      <font-awesome-icon icon="envelope" :style="{ color: 'white'}"/>
+    </a>
     <p class="email"><a :href="mailtoLink">{{email}}</a></p>
   </Card>
 </template>

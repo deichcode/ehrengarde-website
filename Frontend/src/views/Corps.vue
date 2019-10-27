@@ -36,7 +36,7 @@
         Piccolobetreuung.
       </Paragraph>
       <Contacts :contacts="[
-      {image: platzhalterM,
+      {
       position: 'Piccolobetreuung',
       name: 'Melanie Klein',
       email: 'piccolos@ehrengarde-neuwied.de'}]"/>
@@ -80,7 +80,7 @@
         Gesicht.
       </Paragraph>
       <Contacts :contacts="[
-      {image: platzhalterM,
+      {
       position: 'Kommandeur',
       name: 'Günter Kutscher',
       email: 'guenter.kutscher@ehrengarde-neuwied.de'}]"/>
@@ -104,8 +104,7 @@
         wird innerhalb des
         Ehrenoffizierscorps abgestimmt.
       </Paragraph>
-      <Contacts :contacts="[
-      {image: platzhalterM,
+      <Contacts :contacts="[{
       position: 'Kommandeur',
       name: 'Hans-Wilhelm Schaback',
       email: 'hans-wilhelm.schaback@ehrengarde-neuwied.de'}]"/>
@@ -127,7 +126,6 @@ import ehrenoffiziere from '../assets/photos/2018/sitzung/ehrenoffiziere.jpg';
 
 import freizeitPicccolo from '../assets/photos/2019/freizeitPiccolo.jpg';
 import alex from '../assets/photos/potraits/alexander.jpg';
-import platzhalterM from '../assets/photos/potraits/platzhalterM.jpg';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 
@@ -149,7 +147,6 @@ export default {
       reservisten,
       ehrenoffiziere,
       alex,
-      platzhalterM,
       freizeitPicccolo,
     };
   },
