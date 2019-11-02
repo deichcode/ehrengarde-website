@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Start",
+    "route": "/"
+  },
+  {
+    "text": "Kontakte",
+    "route": "/kontakte"
+  },
+  {
+    "text": "Corps",
+    "route": "/corps"
+  },
+  {
+    "text": "Termine",
+    "route": "/termine"
+  }
+]
