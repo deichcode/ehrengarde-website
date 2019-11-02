@@ -6,11 +6,17 @@
     flex-wrap: wrap;
   }
 
+  .is-loading {
+    text-align: center;
+    columns: unset;
+  }
+
 </style>
 
 <template>
   <div class="content">
     <Headline :level=2 styling="page-title">Termine</Headline>
+    <Paragraph class="is-loading" v-if="isLoading">Termine werden geladen…</Paragraph>
     <div class="events_wrapper">
       <Event v-for="event in currentEvents"
              :key="event.uid"
@@ -30,14 +36,16 @@ import moment from 'moment';
 import axios from 'axios';
 import Event from '../components/molecules/Event.vue';
 import Headline from '../components/atoms/Headline.vue';
+import Paragraph from '../components/atoms/Paragraph.vue';
 
 export default {
   name: 'Termine',
-  components: { Headline, Event },
+  components: { Paragraph, Headline, Event },
   data() {
     return {
       events: [],
       yesterday: moment().subtract(1, 'days'),
+      isLoading: true,
     };
   },
   computed: {
@@ -56,6 +64,7 @@ export default {
             end: moment(event.end),
           }),
         );
+        this.isLoading = false;
       });
   },
 };

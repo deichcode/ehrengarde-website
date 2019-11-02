@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column-reverse;
         position: absolute;
-        bottom: 3px;
+        bottom: 2px;
         width: 100%;
         height: 100px;
         background: linear-gradient(0, black, rgba(0, 0, 0, 0));
