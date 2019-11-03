@@ -4,6 +4,7 @@
 <template>
   <div class="content">
     <Headline :level=2 styling="page-title">Kontakt zur Garde</Headline>
+    <Seperator/>
     <p>
       Sie möchten mit uns in Kontakt treten? Wir freuen uns auf ihre E-Mail.
     </p>
@@ -19,10 +20,11 @@ import ImageMarkus from '../assets/photos/potraits/markus.jpg';
 import ImageAlex from '../assets/photos/potraits/alexander.jpg';
 import Contacts from '../components/organisms/Contacts.vue';
 import Headline from '../components/atoms/Headline.vue';
+import Seperator from '../components/atoms/Separator.vue';
 
 export default {
   name: 'Kontakte',
-  components: { Headline, Contacts },
+  components: { Headline, Contacts, Seperator },
   data() {
     return {
       marcel: {
