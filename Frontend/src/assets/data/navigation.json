@@ -12,10 +12,6 @@
     "route": "/termine"
   },
   {
-    "text": "Hofstaat",
-    "route": "/hofstaat"
-  },
-  {
     "text": "Chronik",
     "route": "/chronik"
   },
