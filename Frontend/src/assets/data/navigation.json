@@ -4,15 +4,23 @@
     "route": "/"
   },
   {
-    "text": "Kontakte",
-    "route": "/kontakte"
-  },
-  {
     "text": "Corps",
     "route": "/corps"
   },
   {
     "text": "Termine",
     "route": "/termine"
+  },
+  {
+    "text": "Hofstaat",
+    "route": "/hofstaat"
+  },
+  {
+    "text": "Chronik",
+    "route": "/chronik"
+  },
+  {
+    "text": "Kontakte",
+    "route": "/kontakte"
   }
 ]
