@@ -24,8 +24,7 @@
         Tatendrang in ihr Gardeleben als aktives Mariechen oder aktiver Gardist der Ehrengarde
         durchzustarten.
       </Paragraph>
-
-      <Activity :src="freizeitPicccolo"/>
+      <Picture :src="freizeitPicccolo"/>
       <Paragraph>
         Neben dem Karneval und der Historie gibt es auch viele
         andere Aktionen, welche innerhalb der Garde stattfinden wie beispielsweise hier auf dem Foto
@@ -114,10 +113,12 @@
 </template>
 
 <script>
-import Activity from '../components/molecules/Activity.vue';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Separator from '../components/atoms/Separator.vue';
 import Contacts from '../components/organisms/Contacts.vue';
+import Paragraph from '../components/atoms/Paragraph.vue';
+import Headline from '../components/atoms/Headline.vue';
+import Picture from '../components/atoms/Picture.vue';
 
 import piccolos from '../assets/photos/2019/sitzung/piccolos.jpg';
 import garde from '../assets/photos/2019/sitzung/garde.jpg';
@@ -126,8 +127,7 @@ import ehrenoffiziere from '../assets/photos/2018/sitzung/ehrenoffiziere.jpg';
 
 import freizeitPicccolo from '../assets/photos/2019/freizeitPiccolo.jpg';
 import alex from '../assets/photos/potraits/alexander.jpg';
-import Paragraph from '../components/atoms/Paragraph.vue';
-import Headline from '../components/atoms/Headline.vue';
+
 
 export default {
   name: 'Corps',
@@ -135,10 +135,10 @@ export default {
     Headline,
     Paragraph,
     Contacts,
-
+    Picture,
     Separator,
     TopicHeader,
-    Activity,
+
   },
   data() {
     return {
