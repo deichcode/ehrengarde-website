@@ -6,7 +6,7 @@
       position: relative;
 
       .photo {
-        max-height: 500px;
+        height: 500px;
         width: 100%;
         object-fit: cover;
       }
@@ -23,6 +23,7 @@
         .title {
           font-size: 2.1875rem;
           margin: 0 10px 5px;
+          width: 300px;
         }
       }
     }

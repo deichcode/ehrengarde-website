@@ -1,6 +1,7 @@
 <style scoped lang="scss">
   .paragraph{
     hyphens: auto;
+    text-align: justify;
     column-width: 310px;
   }
 </style>
