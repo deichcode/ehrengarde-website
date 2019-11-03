@@ -47,7 +47,6 @@
 <script>
 import karneval from '../assets/photos/2019/karneval.jpg';
 import historisch from '../assets/photos/2019/historisch.jpg';
-import freizeit from '../assets/photos/2019/freizeit.jpg';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Separator from '../components/atoms/Separator.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
@@ -62,8 +61,6 @@ export default {
     return {
       karneval,
       historisch,
-      freizeit,
-
     };
   },
 };
