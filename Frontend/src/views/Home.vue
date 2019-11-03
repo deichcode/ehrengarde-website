@@ -4,9 +4,7 @@
     <Separator></Separator>
     <TopicHeader :src="karneval" title="Der Karneval"/>
     <Paragraph>
-      Das ursprüngliche „zweite Gesicht“ der Garde – der rheinische Karneval – nimmt heute
-      sehr viel mehr
-      Raum ein. Mit mehr als 80 Uniformierten stellt die Ehrengarde in der Deichstadt die größte
+      Mit mehr als 80 Uniformierten stellt die Ehrengarde in der Deichstadt die größte
       Garde. Besonders stolz ist
       die Garde auf ihre Vielzahl eigener Gewächse. Hierzu zählt natürlich die Aktive Garde mit
       ihrem alljährlichen
@@ -43,27 +41,13 @@
       Gewandungen, die dem weiblichen, einfachen Volk um 1750 entspricht.
     </Paragraph>
     <Separator></Separator>
-    <TopicHeader
-      :src="freizeit"
-      title="Der Verein"/>
-    <Paragraph>
-      Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Proin posuere faucibus dolor, ut malesuada ex malesuada
-      tincidunt.
-      Phasellus sit amet pulvinar nisi, un venenatis erat. Proin facilisis pellentesque tellus,
-      nec tempor tortor porta a. Aliquam elementum mi velit, ac rhoncus ipsum tristique vitae.
-      Aliquam ac magna sed quam placerat imperdiet nec in erat. Donec et pulvinar urna. Nulla varius
-      purus non metus pellentesque mattis.
-      Fusce vel ullamcorper metus, at vehicula leo.
-    </Paragraph>
-    <Separator></Separator>
   </div>
 </template>
 
 <script>
 import karneval from '../assets/photos/2019/karneval.jpg';
 import historisch from '../assets/photos/2019/historisch.jpg';
-import freizeit from '../assets/photos/2019/freizeitPiccolo.jpg';
+import freizeit from '../assets/photos/2019/freizeit.jpg';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Separator from '../components/atoms/Separator.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
@@ -79,6 +63,7 @@ export default {
       karneval,
       historisch,
       freizeit,
+
     };
   },
 };
