@@ -38,6 +38,14 @@ export default new Router({
       },
     },
     {
+      path: '/chronik',
+      name: 'chronik',
+      component: () => import('./views/Chronik.vue'),
+      meta: {
+        title: 'Chronik',
+      },
+    },
+    {
       path: '/termine',
       name: 'Termine',
       component: () => import('./views/Termine.vue'),
