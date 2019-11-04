@@ -38,6 +38,14 @@ export default new Router({
       },
     },
     {
+      path: '/traumtaenzer',
+      name: 'Traumtaenzer',
+      component: () => import('./views/Traumtaenzer.vue'),
+      meta: {
+        title: 'Traumtaenzer',
+      },
+    },
+    {
       path: '/chronik',
       name: 'chronik',
       component: () => import('./views/Chronik.vue'),

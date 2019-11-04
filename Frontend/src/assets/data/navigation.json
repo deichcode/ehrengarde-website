@@ -12,11 +12,15 @@
     "route": "/termine"
   },
   {
-    "text": "Chronik",
-    "route": "/chronik"
+    "text": "Traumtaenzer",
+    "route": "/traumtaenzer"
   },
   {
     "text": "Kontakte",
     "route": "/kontakte"
+  },
+  {
+    "text": "Chronik",
+    "route": "/chronik"
   }
 ]
