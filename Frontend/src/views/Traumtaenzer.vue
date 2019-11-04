@@ -21,7 +21,7 @@
         <Contacts :contacts="[
       {
       position: 'Leitung',
-      name: 'Maraike Meenen',
+      name: 'Mareike Meenen',
       email: 'traumtaenzer@ehrengarde-neuwied.de'}]"/>
          </div>
     <Separator/>
@@ -35,7 +35,7 @@ import Contacts from '../components/organisms/Contacts.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 
-import traumtaenzer from '../assets/photos/2019/traumtaenzer.jpeg';
+import traumtaenzer from '../assets/photos/2019/traumtaenzer.jpeg'
 
 export default {
   name: 'Traumtaenzer',
