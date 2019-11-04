@@ -21,8 +21,8 @@
         </Paragraph>
         <Paragraph>
           Ehrengarde der Stadt Neuwied e. V. <br/>
-          Hochstraße 128 <br/>
-          56566 Neuwied <br/>
+          Merowingerstraße 9 <br/>
+          56567 Neuwied <br/>
         </Paragraph>
 
         <Headline :level=3 styling="card-title">

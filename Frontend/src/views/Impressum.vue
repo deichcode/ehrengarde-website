@@ -25,11 +25,11 @@
           <a href="mailto:info@ehrengarde-neuwied.de">info@ehrengarde-neuwied.de</a>
         </p>
         <p>
-          Markus Schröder
+          Marcel Thran
           <br/>
-          Hochstraße 128
+          Merowingerstraße 9
           <br/>
-          56566 Neuwied
+          56567 Neuwied
           <br/>
           <a href="tel:+492631948139">(0 26 31) 49 81 39</a>
           <br/>
