@@ -99,7 +99,7 @@
         Traditionell werden
         ein bis zwei Ehrenoffiziere pro Jahr neu ernannt. Die Offiziersrunde schlägt in jedem Jahr
         verdiente Mitglieder
-        der Garde oder verdiente Karnevalisten aus Politik und Wirtschaft vor. Über die Vorschläge
+        der Garde, verdiente Karnevalisten sowie Persönichkeiten aus Politik und Wirtschaft vor. Über die Vorschläge
         wird innerhalb des
         Ehrenoffizierscorps abgestimmt.
       </Paragraph>

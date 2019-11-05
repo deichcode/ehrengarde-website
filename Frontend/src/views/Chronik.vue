@@ -70,7 +70,7 @@
         <Paragraph>1975 fand unter dem Protektorat von Oberbürgermeister Schön am 22. September das 22jährige Jubiläum
             im Leseverein statt. Im darauffolgenden Jahr stellte die Ehrengarde mit Robert I. und Ihrer Putzigkeit
             Gisela I. das Prinzenpaar, das am 24. Januar 1976 proklamiert wurde. Im Zuge der Proklamation von Robert
-            Raab wurde dieser Von Mich Wertgen als Kommandeur abgelöst. In der Sitzung am 15. Januar 1977 bekam die
+            Raab wurde dieser Von Michael (oder Micha) Wertgen als Kommandeur abgelöst. In der Sitzung am 15. Januar 1977 bekam die
             Ehrengarde Unterstützung von der Gruppe 4 Asse und ein Joker. Der Auftritt wurde ein voller Erfolg und
             so wurde diese Gruppe auch in den folgenden Sitzungen ein fester Bestandteil des Programms. 1980 wurde
             das Reservistencorps der Ehrengarde gegründet. Bei der Sitzung am 17. Januar 1981 verblüfften die aktiven
