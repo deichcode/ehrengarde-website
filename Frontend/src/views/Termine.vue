@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import moment from 'moment';
+import moment from 'moment-timezone';
 import axios from 'axios';
 import Event from '../components/molecules/Event.vue';
 import Headline from '../components/atoms/Headline.vue';
@@ -60,8 +60,8 @@ export default {
         this.events = response.data.map(
           event => ({
             ...event,
-            start: moment(event.start),
-            end: moment(event.end),
+            start: moment.parseZone(event.start),
+            end: moment.parseZone(event.start),
           }),
         );
         this.isLoading = false;

@@ -43,8 +43,8 @@ namespace Ehrengarde.Api.Tests.Services
                     {
                         Uid = new Guid().ToString(),
                         Name = "Another Event",
-                        Start = new CalDateTime(2019, 1, 15, 8, 10, 0),
-                        End = new CalDateTime(2020, 1, 15, 18, 0, 0),
+                        Start = new CalDateTime(2019, 1, 15, 8, 10, 0, "+01:00"),
+                        End = new CalDateTime(2020, 1, 15, 18, 0, 0, "+01:00"),
                         IsAllDay = false,
                         Location = "Koblenz",
                         Description = "\n"
@@ -82,16 +82,16 @@ namespace Ehrengarde.Api.Tests.Services
                 result.First().Uid.Should().Be(_calendar.Events.First().Uid);
                 result.First().Title.Should().Be(_calendar.Events.First().Summary);
                 result.First().Description.Should().Be(_calendar.Events.First().Description);
-                result.First().Start.Should().Be(_calendar.Events.First().Start.Value);
-                result.First().End.Should().Be(_calendar.Events.First().End.Value);
+                result.First().Start.Should().Be(_calendar.Events.First().Start.Date.ToString(Event.MomentDateTimeFormat));
+                result.First().End.Should().Be(_calendar.Events.First().End.Date.ToString(Event.MomentDateTimeFormat));
                 result.First().IsAllDay.Should().Be(_calendar.Events.First().IsAllDay);
                 result.First().Location.Should().Be(_calendar.Events.First().Location);
 
                 result.Last().Uid.Should().Be(_calendar.Events.Last().Uid);
                 result.Last().Title.Should().Be(_calendar.Events.Last().Summary);
                 result.Last().Description.Should().Be("");
-                result.Last().Start.Should().Be(_calendar.Events.Last().Start.Value);
-                result.Last().End.Should().Be(_calendar.Events.Last().End.Value);
+                result.Last().Start.Should().Be(_calendar.Events.Last().Start.AsDateTimeOffset.ToString(Event.MomentDateTimeFormat));
+                result.Last().End.Should().Be(_calendar.Events.Last().End.AsDateTimeOffset.ToString(Event.MomentDateTimeFormat));
                 result.Last().IsAllDay.Should().Be(_calendar.Events.Last().IsAllDay);
                 result.Last().Location.Should().Be(_calendar.Events.Last().Location);
             }

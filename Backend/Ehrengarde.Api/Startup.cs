@@ -40,7 +40,7 @@ namespace Ehrengarde.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             if (_environment.IsDevelopment())
             {
-                services.AddSingleton<ICalendarService, FakeCalendarService>();
+                services.AddSingleton<ICalendarService, CalendarService>();
             }
             else
             {

@@ -15,28 +15,28 @@ namespace Ehrengarde.Api.Services.Calendar
                 {
                     Title = "All Day Event",
                     Description = "Some very important Event",
-                    Start = new DateTime(2020, 9, 28),
+                    Start = new DateTime(2020, 9, 28).ToString(Event.MomentDateTimeFormat),
                     IsAllDay = true,
                     Location = "Neuwied"
                 },
                 new Event
                 {
                     Title = "Event",
-                    Start = new DateTime(2020, 9, 28, 18, 0, 0),
+                    Start = new DateTime(2020, 9, 28, 18, 0, 0).ToString(Event.MomentDateTimeFormat),
                     IsAllDay = false,
                     Location = "Neuwied"
                 },
                 new Event
                 {
                     Title = "Event",
-                    Start = new DateTime(2020, 9, 28, 18, 0, 0),
+                    Start = new DateTime(2020, 9, 28, 18, 0, 0).ToString(Event.MomentDateTimeFormat),
                     IsAllDay = false,
                     Location = "Neuwied"
                 },
                 new Event
                 {
                     Title = "Event",
-                    Start = new DateTime(2020, 9, 28, 18, 0, 0),
+                    Start = new DateTime(2020, 9, 28, 18, 0, 0).ToString(Event.MomentDateTimeFormat),
                     IsAllDay = false,
                     Location = "Neuwied"
                 }
