@@ -34,10 +34,6 @@
           verlangen. Eine Sperrung oder Löschung kann nicht erfolgen, wenn gesetzliche Regelungen
           dem entgegenstehen.
         </Paragraph>
-        <Paragraph>
-          Bitte kontaktieren Sie unseren Datenschutzbeauftragten unter
-          <a href="mailto:datenschutz@ehrengarde-neuwied.de">datenschutz@ehrengarde-neuwied.de</a>.
-        </Paragraph>
 
         <Headline :level=3 styling="card-title">
           Datenvermeidung und Datensparsamkeit
@@ -120,12 +116,12 @@
 </template>
 
 <script>
-  import Card from '../components/atoms/Card.vue';
-  import Headline from '../components/atoms/Headline.vue';
-  import Paragraph from '../components/atoms/Paragraph.vue';
+import Card from '../components/atoms/Card.vue';
+import Headline from '../components/atoms/Headline.vue';
+import Paragraph from '../components/atoms/Paragraph.vue';
 
-  export default {
-    name: 'Datenschutz',
-    components: {Paragraph, Headline, Card},
-  };
+export default {
+  name: 'Datenschutz',
+  components: { Paragraph, Headline, Card },
+};
 </script>
