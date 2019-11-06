@@ -38,7 +38,7 @@
       {
       position: 'Piccolobetreuung',
       name: 'Melanie Klein',
-      email: 'piccolos@ehrengarde-neuwied.de'}]"/>
+      email: 'kontakt-piccolos@ehrengarde-neuwied.de'}]"/>
       <Separator/>
 
       <TopicHeader id="aktive" :src="garde" title="Die aktive Garde"/>
@@ -82,7 +82,7 @@
       {
       position: 'Kommandeur',
       name: 'Günter Kutscher',
-      email: 'guenter.kutscher@ehrengarde-neuwied.de'}]"/>
+      email: 'kontakt-reservisten@ehrengarde-neuwied.de'}]"/>
       <Separator/>
 
       <TopicHeader id="eos" :src="ehrenoffiziere" title="Die Ehrenoffiziere"/>
@@ -99,14 +99,15 @@
         Traditionell werden
         ein bis zwei Ehrenoffiziere pro Jahr neu ernannt. Die Offiziersrunde schlägt in jedem Jahr
         verdiente Mitglieder
-        der Garde, verdiente Karnevalisten sowie Persönichkeiten aus Politik und Wirtschaft vor. Über die Vorschläge
+        der Garde, verdiente Karnevalisten sowie Persönichkeiten aus Politik und Wirtschaft vor.
+        Über die Vorschläge
         wird innerhalb des
         Ehrenoffizierscorps abgestimmt.
       </Paragraph>
       <Contacts :contacts="[{
       position: 'Kommandeur',
       name: 'Hans-Wilhelm Schaback',
-      email: 'hans-wilhelm.schaback@ehrengarde-neuwied.de'}]"/>
+      email: 'kontakt-ehrenoffiziere@ehrengarde-neuwied.de'}]"/>
       <Separator/>
     </div>
   </div>
@@ -127,7 +128,6 @@ import ehrenoffiziere from '../assets/photos/2018/sitzung/ehrenoffiziere.jpg';
 
 import freizeitPicccolo from '../assets/photos/2019/freizeitPiccolo.jpg';
 import alex from '../assets/photos/potraits/alexander.jpg';
-
 
 export default {
   name: 'Corps',
