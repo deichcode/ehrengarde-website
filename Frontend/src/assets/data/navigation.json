@@ -4,12 +4,12 @@
     "route": "/"
   },
   {
-    "text": "Corps",
-    "route": "/corps"
-  },
-  {
     "text": "Termine",
     "route": "/termine"
+  },
+  {
+    "text": "Corps",
+    "route": "/corps"
   },
   {
     "text": "Traumtänzer",
