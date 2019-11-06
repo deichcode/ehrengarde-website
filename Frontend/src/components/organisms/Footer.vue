@@ -15,17 +15,19 @@ export default {
   footer {
     background: $white;
     font-size: 0.6rem;
-    padding: $default-spacer;
+    padding: calc(2 * #{$default-spacer}) calc(2 * #{$default-spacer}) calc(4 * #{$default-spacer});
     flex-shrink: 0;
     text-align: center;
     color: $gray;
 
     a {
-      @include navigation-link
+      @include navigation-link;
+      margin-left: calc(2 * #{$default-spacer});
+      margin-right: calc(2 * #{$default-spacer});
     }
 
     p {
-      margin-top: $double-default-spacer;
+      margin-top: calc(2 * #{$default-spacer});
       color: inherit;
     }
   }

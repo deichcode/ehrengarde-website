@@ -69,5 +69,5 @@ main {
 }
 
 .content {
-  padding: 0 $default-spacer $double-default-spacer $default-spacer;
+  padding: 0 $default-spacer calc(2 * #{$default-spacer}) $default-spacer;
 }
