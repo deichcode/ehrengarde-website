@@ -17,7 +17,7 @@
 <script>
 import ImageMarcel from '../assets/photos/potraits/marcel.jpg';
 import ImageMarkus from '../assets/photos/potraits/markus.jpg';
-import ImageAlex from '../assets/photos/potraits/alexander.jpg';
+import ImageAlex from '../assets/photos/potraits/alexander.jpeg';
 import Contacts from '../components/organisms/Contacts.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Seperator from '../components/atoms/Separator.vue';
