@@ -9,6 +9,7 @@ import {
   faCalendarAlt,
   faEnvelope,
   faCaretDown, faCaretUp,
+  faLink,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import moment from 'moment';
@@ -27,7 +28,7 @@ Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
 
-library.add(faDirections, faCalendarAlt, faEnvelope, faCaretDown, faCaretUp);
+library.add(faDirections, faCalendarAlt, faEnvelope, faCaretDown, faCaretUp, faLink);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 const locale = window.navigator.language || window.navigator.userLanguage;

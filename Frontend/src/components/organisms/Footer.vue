@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <router-link to="/sponsoren">Sponsoren</router-link>
     <router-link to="/datenschutz">Datenschutz</router-link>
     <router-link to="/impressum">Impressum</router-link>
   </footer>
