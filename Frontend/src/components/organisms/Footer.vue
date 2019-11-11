@@ -13,6 +13,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @media (max-width: 450px) {
+    footer {
+      flex-direction: column;
+      display: flex;
+      color: #444;
+      align-items: center;
+
+      a {
+        display: table;
+      }
+    }
+  }
+
   footer {
     background: $white;
     font-size: 0.6rem;
