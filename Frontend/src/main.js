@@ -12,7 +12,7 @@ import {
   faLink,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import moment from 'moment';
+import moment from 'moment-timezone';
 import router from './router';
 import App from './App.vue';
 
