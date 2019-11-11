@@ -11,6 +11,13 @@
         object-fit: cover;
       }
 
+      @media(min-width: 1024px){
+        .photo {
+          width: 100%;
+          height:  100%;
+        }
+      }
+
       .title-background {
         display: flex;
         flex-direction: column-reverse;

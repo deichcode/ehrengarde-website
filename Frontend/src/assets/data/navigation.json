@@ -7,6 +7,10 @@
     "text": "Termine",
     "route": "/termine"
   },
+ {
+    "text": "Hofstaat",
+    "route": "/hofstaat"
+  },
   {
     "text": "Corps",
     "route": "/corps"
