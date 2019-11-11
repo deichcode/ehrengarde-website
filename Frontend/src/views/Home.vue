@@ -10,7 +10,8 @@
       ihrem alljährlichen
       Gardetanz, die Showtanzgruppe „Traumtänzerkompanie“, das Piccolokorps, mehrere Büttenredner
       aus den eigenen Reihen
-      und Bühnenstücke der Reservisten der Garde. So ist es kaum verwunderlich, dass die Ehrengarde das eigene
+      und Bühnenstücke der Reservisten der Garde. So ist es kaum verwunderlich, dass die Ehrengarde
+      das eigene
       Sitzungsprogramm fast ausschließlich
       aus den eigenen Reihen bestreiten kann. Wenn die eigene Sitzung dann erfolgreich gemeistert
       wurde, steht für die
@@ -25,8 +26,8 @@
     <Separator></Separator>
     <TopicHeader :src="historisch" title="Die Historie"/>
     <Paragraph>
-      Anlässlich der 300-Jahr-Feier der Stadt
-      Neuwied wurde eine Gruppe junger Männer mit originalgetreuen Uniformen der wiedischen Grenadiere eingekleidet.
+      Anlässlich der 300-Jahr-Feier der Stadt Neuwied wurde eine Gruppe junger Männer mit
+      originalgetreuen Uniformen der wiedischen Grenadiere eingekleidet.
       Diese Gruppe stellt im Festumzug zum Stadtjubiläum 1953 einen historisch bedeutsamen Teil der
       Stadtgeschichte dar. Dies war die Geburtsstunde der Ehrengarde der Stadt Neuwied. Ihrer
       historischen Rolle werden
