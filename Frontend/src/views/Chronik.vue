@@ -491,10 +491,10 @@
       Vize-Kommandeur,
       Stefanie Kugler zur Kommandeuse, Bjarne Schröder zum Zahlmeister und Matthias Wertgen zum
       Spieß. Im
-      Vorstand wurden fast alle in ihrem Amt bestätigt, lediglich Michaela Bayer wurde durch Harry
-      Ogrodnik
-      ersetzt. Jeder bekommt was er verdient und so bekamen in diesem Jahr Manfred Wertgen und
-      Markus Schröder
+      Vorstand wurden alle in ihrem Amt bestätigt, lediglich Michaela Bayer gab ihr Amt zugunsten
+      von Harry Ogrodnik
+      ab. Jeder bekommt was er verdient und so bekamen in diesem Jahr Manfred Wertgen und Markus
+      Schröder
       vom Festausschuss der Stadt Neuwied den Verdienstorden des Festausschusses in Gold für ihre
       langjährigen
       Verdienste in der Ehrengarde und im Neuwieder Karneval. 2019 startete mit der Sitzung unter

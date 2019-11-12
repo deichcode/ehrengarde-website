@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <router-link to="/sponsoren">Sponsoren</router-link>
     <router-link to="/datenschutz">Datenschutz</router-link>
     <router-link to="/impressum">Impressum</router-link>
   </footer>
@@ -12,6 +13,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @media (max-width: 450px) {
+    footer {
+      flex-direction: column;
+      display: flex;
+      color: #444;
+      align-items: center;
+
+      a {
+        display: table;
+      }
+    }
+  }
+
   footer {
     background: $white;
     font-size: 0.6rem;

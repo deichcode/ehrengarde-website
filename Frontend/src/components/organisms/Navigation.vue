@@ -130,8 +130,5 @@ export default {
 
     this.updateNavigation();
   },
-  beforeRouteEnter() {
-    console.log('route update');
-  },
 };
 </script>
