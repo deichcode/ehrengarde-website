@@ -1,23 +1,23 @@
 <style scoped lang="scss">
-    .map_wrapper {
-        padding-top: 10px;
-    }
+  .map_wrapper {
+    padding-top: 10px;
+  }
 </style>
 
 <style>
-    /*noinspection CssUnusedSymbol*/
-    .leaflet-control-attribution {
-        display: none;
-    }
+  /*noinspection CssUnusedSymbol*/
+  .leaflet-control-attribution {
+    display: none;
+  }
 </style>
 
 <template>
-    <div @click="tabZoom" style="height: 100%;">
-        <l-map
-                ref="locationMap"
-                :zoom="baseZoom"
-                :center="center"
-                :options="{
+  <div v-if="locationFound" @click="tabZoom" style="height: 100%;">
+    <l-map
+      ref="locationMap"
+      :zoom="baseZoom"
+      :center="center"
+      :options="{
                     zoomControl: false,
                     dragging: !isMobile,
                     touchZoom: !isMobile,
@@ -27,11 +27,11 @@
                     keyboard: !isMobile,
                     tap: !isMobile,
                 }"
-        >
-            <l-tile-layer :url="url"></l-tile-layer>
-            <l-marker :lat-lng="center"></l-marker>
-        </l-map>
-    </div>
+    >
+      <l-tile-layer :url="url"></l-tile-layer>
+      <l-marker :lat-lng="center"></l-marker>
+    </l-map>
+  </div>
 </template>
 
 <script>
@@ -54,6 +54,7 @@ export default {
       url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       bounds: null,
       isMobile: L.Browser.mobile,
+      locationFound: true,
     };
   },
   methods: {
@@ -67,7 +68,14 @@ export default {
     },
     async getGeolocation() {
       const result = await provider.search({ query: this.location });
-      return [result[0].y, result[0].x];
+      console.log(result);
+      if (result.length > 0) {
+        return [result[0].y, result[0].x];
+      }
+      this.$nextTick(() => {
+        this.locationFound = false;
+      });
+      return null;
     },
   },
   async mounted() {
