@@ -38,14 +38,14 @@ namespace Ehrengarde.Api
                     });
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            if (_environment.IsDevelopment())
-            {
+            //if (_environment.IsDevelopment())
+            //{
+            //    services.AddSingleton<ICalendarService, CalendarService>();
+            //}
+            //else
+            //{
                 services.AddSingleton<ICalendarService, CalendarService>();
-            }
-            else
-            {
-                services.AddSingleton<ICalendarService, CalendarService>();
-            }
+            //}
 
             services.AddSingleton<IHttpService, HttpService>();
             services.AddSingleton<IHttpAdatper, HttpAdapter>();

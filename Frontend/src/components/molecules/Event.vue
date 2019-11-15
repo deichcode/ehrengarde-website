@@ -1,4 +1,10 @@
 <style scoped lang="scss">
+  @media (min-width: 500px) {
+    .event {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
   .event {
     display: flex;
     flex-flow: column;
@@ -28,6 +34,15 @@
       height: 150px;
       margin-right: -10px;
       margin-left: -10px;
+      flex-grow: 1;
+      /*position: absolute;*/
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin-top: auto;
+      }
     }
 
     .event_description {
@@ -70,20 +85,21 @@
     <br/>
     <span class="event_location_address" v-if="location">
       <br/>
-      <a class="no-underline" v-if="isIOS || isMacOS" :href="'http://maps.apple.com/?daddr='+location">
+      <a class="no-underline" v-if="isIOS || isMacOS"
+         :href="'http://maps.apple.com/?daddr='+location">
           <font-awesome-icon class="event-direction_icon" icon="directions"
                              :style="{ color: 'white'}"/>
       </a>
-      <a class="no-underline"  v-if="isAndroid"
+      <a class="no-underline" v-if="isAndroid"
          :href="'https://www.google.com/maps/dir/?api=1&destination='+location">
           <font-awesome-icon class="event-direction_icon" icon="directions"
                              :style="{ color: 'white'}"/>
       </a>
-      <a class="no-underline"  v-if="isWinPhone" :href="'ms-drive-to:?destination.name='+location">
+      <a class="no-underline" v-if="isWinPhone" :href="'ms-drive-to:?destination.name='+location">
           <font-awesome-icon class="event-direction_icon" icon="directions"
                              :style="{ color: 'white'}"/>
       </a>
-      <a class="no-underline"  v-if="!isMobile && !isMacOS"
+      <a class="no-underline" v-if="!isMobile && !isMacOS"
          :href="'https://www.google.com/maps/dir/?api=1&destination='+location"
          target="_blank">
           <font-awesome-icon class="event-direction_icon" icon="directions"
