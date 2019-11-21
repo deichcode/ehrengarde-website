@@ -21,7 +21,7 @@
     .card-content {
       position: relative;
       flex-grow: 1;
-      display: flex;
+     // display: flex;
       flex-direction: column;
     }
   }

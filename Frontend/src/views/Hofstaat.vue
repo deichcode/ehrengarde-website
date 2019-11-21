@@ -14,6 +14,13 @@
         <Separator/>
         <div class="group">
         <Picture :src="hofstaat"/>
+            <Paragraph>Wenn Sie unseren Besuch wünschen wenden Sie sich bitte an folgenden Kontakt.</Paragraph>
+            <Contacts  :contacts="[
+      {image: alex,
+      position: 'Kommandeur',
+      name: 'Alexander Wertgen',
+      email: 'kommandeur@ehrengarde-neuwied.de'}]"></Contacts>
+
         </div>
         <Separator/>
         <div class="hofstaat">
@@ -354,6 +361,7 @@ import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Picture from '../components/atoms/Picture.vue';
+import Contacts from '../components/organisms/Contacts.vue';
 
 import hofstaat from '../assets/photos/2019/hofstaat/hofstaat.jpg';
 import markus from '../assets/photos/2019/hofstaat/markus.jpg';
@@ -366,12 +374,18 @@ import jutta from '../assets/photos/2019/hofstaat/jutta.jpg';
 import ute from '../assets/photos/2019/hofstaat/ute.jpg';
 import hansMartin from '../assets/photos/2019/hofstaat/hans-martin.jpg';
 import ruth from '../assets/photos/2019/hofstaat/ruth.jpg';
+import alex from '../assets/photos/potraits/alexander.jpeg';
 
 
 export default {
   name: 'Hofstaat',
   components: {
-    TopicHeader, Separator, Paragraph, Headline, Picture,
+    TopicHeader,
+    Separator,
+    Paragraph,
+    Headline,
+    Picture,
+    Contacts,
   },
   data() {
     return {
@@ -386,6 +400,7 @@ export default {
       ute,
       ruth,
       hansMartin,
+      alex,
     };
   },
 };

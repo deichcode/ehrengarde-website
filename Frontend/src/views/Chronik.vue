@@ -506,6 +506,12 @@
       Prinzenpaar der Ehrengarde für das Jubiläumsjahr 6x11 Jahre vorgestellt. Am 17. August 2019
       findet im
       Schlosstheater die Feier zu diesem Jubiläum statt.
+      Beim Sommerfest des Festausschusses wurde auch das künftige Prinzenpaar der Ehrengarde für das Jubiläumsjahr
+      6x11 Jahre vorgestellt. Am 17. August 2019 fand im Schlosstheater die Feier zu diesem Jubiläum statt, die vom
+      neuen Moderatorenteam der Garde, Stefanie Kugler und Alexander Wertgen hervorragend in Szene gesetzt wurde. Wie
+      in jeder Jubiläumssession stellte die Garde mit Prinz Markus I. (Schröder) -Die spitze Feder von der Ehrengarde
+      und Prinzessin Michaela I. (Bayer) vom Römerkastell am Wiedesstrand das Prinzenpaar der Stadt Neuwied. Die
+      Proklamation am 09. November stand unter dem Motto "Ball am Hofe des Prinzen":
     </Paragraph>
     <Separator/>
   </div>
