@@ -39,7 +39,8 @@
       des Vereins handgemachte
       Gewandungen, die dem weiblichen, einfachen Volk um 1750 entspricht.
     </Paragraph>
-    <Separator></Separator>
+    <Separator/>
+    <SocialMedia/>
   </div>
 </template>
 
@@ -50,11 +51,16 @@ import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Separator from '../components/atoms/Separator.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
+import SocialMedia from '../components/atoms/SocialMedia';
 
 export default {
   name: 'home',
   components: {
-    Headline, Paragraph, Separator, TopicHeader,
+    SocialMedia,
+    Headline,
+    Paragraph,
+    Separator,
+    TopicHeader,
   },
   data() {
     return {
