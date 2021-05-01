@@ -32,6 +32,7 @@
       email: 'kontakt-traumtaenzer@ehrengarde-neuwied.de'}]"/>
     </div>
     <Separator/>
+    <SocialMedia></SocialMedia>
   </div>
 </template>
 
@@ -41,12 +42,14 @@ import Separator from '../components/atoms/Separator.vue';
 import Contacts from '../components/organisms/Contacts.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 import traumtaenzer from '../assets/photos/2019/traumtaenzer.jpeg';
 
 export default {
   name: 'Traumtaenzer',
   components: {
+    SocialMedia,
     Headline,
     Paragraph,
     Contacts,

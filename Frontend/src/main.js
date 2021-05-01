@@ -5,6 +5,11 @@ import 'normalize.css';
 import 'leaflet/dist/leaflet.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+} from '@fortawesome/free-brands-svg-icons';
+import {
   faDirections,
   faCalendarAlt,
   faEnvelope,
@@ -28,7 +33,7 @@ Vue.component('l-map', LMap);
 Vue.component('l-tile-layer', LTileLayer);
 Vue.component('l-marker', LMarker);
 
-library.add(faDirections, faCalendarAlt, faEnvelope, faCaretDown, faCaretUp, faLink);
+library.add(faDirections, faCalendarAlt, faEnvelope, faCaretDown, faCaretUp, faLink, faInstagram, faFacebook, faTwitter);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 const locale = window.navigator.language || window.navigator.userLanguage;
@@ -56,5 +61,5 @@ router.beforeEach((to, from, next) => {
 
 new Vue({
   router,
-  render: h => h(App),
+  render: (h) => h(App),
 }).$mount('#app');

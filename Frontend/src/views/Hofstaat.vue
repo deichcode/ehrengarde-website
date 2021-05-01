@@ -350,6 +350,7 @@
                     Kindergarten St. Peter und Paul Irlich unter Beweis stellt, sicher hilfreich sein.
                 </Paragraph>
                 <Separator/>
+              <SocialMedia/>
             </div>
         </div>
     </div>
@@ -362,6 +363,7 @@ import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Picture from '../components/atoms/Picture.vue';
 import Contacts from '../components/organisms/Contacts.vue';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 import hofstaat from '../assets/photos/2019/hofstaat/hofstaat.jpg';
 import markus from '../assets/photos/2019/hofstaat/markus.jpg';
@@ -376,10 +378,10 @@ import hansMartin from '../assets/photos/2019/hofstaat/hans-martin.jpg';
 import ruth from '../assets/photos/2019/hofstaat/ruth.jpg';
 import alex from '../assets/photos/potraits/alexander.jpeg';
 
-
 export default {
   name: 'Hofstaat',
   components: {
+    SocialMedia,
     TopicHeader,
     Separator,
     Paragraph,

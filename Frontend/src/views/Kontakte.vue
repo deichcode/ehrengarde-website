@@ -11,6 +11,8 @@
     <div id="kontakte">
       <Contacts :contacts="[marcel, markus, alex]" />
     </div>
+    <Seperator/>
+    <SocialMedia/>
   </div>
 </template>
 
@@ -21,10 +23,13 @@ import ImageAlex from '../assets/photos/potraits/alexander.jpeg';
 import Contacts from '../components/organisms/Contacts.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Seperator from '../components/atoms/Separator.vue';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 export default {
   name: 'Kontakte',
-  components: { Headline, Contacts, Seperator },
+  components: {
+    SocialMedia, Headline, Contacts, Seperator,
+  },
   data() {
     return {
       marcel: {

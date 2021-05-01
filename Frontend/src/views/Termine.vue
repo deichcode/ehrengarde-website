@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     currentEvents() {
-      return this.events.filter(e => e.start.isAfter(this.yesterday));
+      return this.events.filter((e) => e.start.isAfter(this.yesterday));
     },
   },
   mounted() {
@@ -58,7 +58,7 @@ export default {
       .get(`${process.env.VUE_APP_API}/calendar`)
       .then((response) => {
         this.events = response.data.map(
-          event => ({
+          (event) => ({
             ...event,
             start: moment.parseZone(event.start),
             end: moment.parseZone(event.start),
