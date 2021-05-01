@@ -68,7 +68,6 @@ export default {
     },
     async getGeolocation() {
       const result = await provider.search({ query: this.location });
-      console.log(result);
       if (result.length > 0) {
         return [result[0].y, result[0].x];
       }
