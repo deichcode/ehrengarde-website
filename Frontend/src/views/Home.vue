@@ -51,7 +51,7 @@ import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Separator from '../components/atoms/Separator.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
-import SocialMedia from '../components/atoms/SocialMedia';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 export default {
   name: 'home',

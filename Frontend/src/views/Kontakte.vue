@@ -23,11 +23,13 @@ import ImageAlex from '../assets/photos/potraits/alexander.jpeg';
 import Contacts from '../components/organisms/Contacts.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Seperator from '../components/atoms/Separator.vue';
-import SocialMedia from '../components/atoms/SocialMedia';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 export default {
   name: 'Kontakte',
-  components: {SocialMedia, Headline, Contacts, Seperator },
+  components: {
+    SocialMedia, Headline, Contacts, Seperator,
+  },
   data() {
     return {
       marcel: {

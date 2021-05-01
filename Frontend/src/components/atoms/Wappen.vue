@@ -13,7 +13,7 @@ export default {
   props: {
     corps: {
       type: String,
-      validator: value => ['aktive', 'piccolos', 'reservisten', 'eos'].includes(value),
+      validator: (value) => ['aktive', 'piccolos', 'reservisten', 'eos'].includes(value),
     },
   },
   computed: {

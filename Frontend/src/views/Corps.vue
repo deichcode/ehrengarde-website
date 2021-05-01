@@ -121,7 +121,7 @@ import Contacts from '../components/organisms/Contacts.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Picture from '../components/atoms/Picture.vue';
-import SocialMedia from '../components/atoms/SocialMedia';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 import piccolos from '../assets/photos/2019/sitzung/piccolos.jpg';
 import garde from '../assets/photos/2019/sitzung/garde.jpg';
@@ -129,7 +129,6 @@ import reservisten from '../assets/photos/2019/sitzung/reservisten.jpg';
 import ehrenoffiziere from '../assets/photos/2018/sitzung/ehrenoffiziere.jpg';
 import freizeitPicccolo from '../assets/photos/2019/freizeitPiccolo.jpg';
 import alex from '../assets/photos/potraits/alexander.jpeg';
-
 
 export default {
   name: 'Corps',

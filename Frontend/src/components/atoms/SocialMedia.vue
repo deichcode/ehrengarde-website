@@ -32,7 +32,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'SocialMedia',
-  };
+export default {
+  name: 'SocialMedia',
+};
 </script>

@@ -42,7 +42,7 @@ import Separator from '../components/atoms/Separator.vue';
 import Contacts from '../components/organisms/Contacts.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
-import SocialMedia from '../components/atoms/SocialMedia';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 import traumtaenzer from '../assets/photos/2019/traumtaenzer.jpeg';
 

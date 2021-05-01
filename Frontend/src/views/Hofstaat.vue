@@ -363,7 +363,7 @@ import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 import Picture from '../components/atoms/Picture.vue';
 import Contacts from '../components/organisms/Contacts.vue';
-import SocialMedia from '../components/atoms/SocialMedia';
+import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 import hofstaat from '../assets/photos/2019/hofstaat/hofstaat.jpg';
 import markus from '../assets/photos/2019/hofstaat/markus.jpg';

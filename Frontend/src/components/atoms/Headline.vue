@@ -29,15 +29,15 @@ export default {
   props: {
     styling: {
       type: String,
-      validator: value => ['site-title', 'page-title', 'topic-header-title', 'card-title'].includes(value),
+      validator: (value) => ['site-title', 'page-title', 'topic-header-title', 'card-title'].includes(value),
     },
     align: {
       type: String,
-      validator: value => ['center', 'left'].includes(value),
+      validator: (value) => ['center', 'left'].includes(value),
     },
     level: {
       type: Number,
-      validator: value => value >= 1 && value <= 6,
+      validator: (value) => value >= 1 && value <= 6,
     },
   },
   computed: {
