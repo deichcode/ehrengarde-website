@@ -14,10 +14,10 @@
         <Separator />
         <div class="hofstaat">
             <div class="person">
-                <TopicHeader id="markus" :src="markus" title="Prinz Markus"/>
+                <TopicHeader id="markus" :src="markus" title="Prinz Markus" />
                 <div class="titel">
                     <Paragraph>Prinz Markus I – Die spitze Feder von der Ehrengarde</Paragraph>
-            </div>
+                </div>
                 <Paragraph>
                     An einem sonnigen Sonntag im Oktober kam das vierte von fünf Kindern zur Welt. Bei Nummer
                     4 war der Trubel sicherlich nicht mehr so groß und im Fahrwasser von den drei großen Geschwistern
@@ -33,31 +33,37 @@
                     karnevalistische Ausbildung in der Ehrengarde. Er durfte sich austoben wo immer er es wollte und
                     machte hiervon auch reichlich Gebrauch. Er betreute das wichtigste der vier Corps, das Piccolo Corps
                     von 1985-1990. Davor und parallel hierzu schwang er 1982- 1984, 1987 -1990 und 1997 - 1998 neben
-                    der obligatorischen Teilnahme am Gardetanz auch insgesamt 9 Jahre lang als Tanzoffizier der Garde mit
+                    der obligatorischen Teilnahme am Gardetanz auch insgesamt 9 Jahre lang als Tanzoffizier der Garde
+                    mit
                     Cornelia Mattern und Simone Wirz das Tanzbein. 1992 sah man ihn gar als Mary von Mary und Gordy mit
                     Fredy Winter zusammen als „Frauenduett“ auf der Bühne. 1997 - 2000 war er als Zahlmeister in der
                     Offiziersrunde und anschließend 15 Jahre stellv. Kommandeur. Zusätzlich übernahm er ab dem Jahr
                     2000 vom damaligen Kommandeur und heutigen Vizepräsidenten Manfred Wertgen die Verantwortung für die
                     Choreografie und Einstudierung der Gardetänze. Hierbei steht ihm seit 4 Jahren sein Hofnarr Mareike
-                    Meenen tatkräftig zur Seite. 2015 stellte er sich dann als Präsident der Garde zur Verfügung und wurde
+                    Meenen tatkräftig zur Seite. 2015 stellte er sich dann als Präsident der Garde zur Verfügung und
+                    wurde
                     von der Mitgliederversammlung in dieses Amt gewählt. Im 6 x 11ten Jahr des Bestehens der Ehrengarde
                     wird ihm nun die große Ehre zuteil, die Garde mit seinem Hofstaat als Prinz der Stadt Neuwied durch
                     diese Jubiläumssession zu begleiten.
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
             <div class="person">
-                <TopicHeader id="michaela" :src="michaela" title="Prinzessin Michaela"/>
+                <TopicHeader id="michaela" :src="michaela" title="Prinzessin Michaela" />
                 <div class="titel">
                     <Paragraph>Prinzessin Michaela I vom Römerkastell am Wiedesstrande</Paragraph>
                 </div>
                 <Paragraph>
                     Zunächst als Piccolo erobert Michaela seit 1980 die Bühnen unserer Deichstadt. Doch das war ih
                     schnell zu wenig, wollte sie doch gerne, wie ihre Mama Beate, Tanzmariechen sein. Gesagt, getan –
-                    erst als Piccolo, später auch als Tanzpaar und Tanztrio brachte Michaela so manche flotte Sohle aufs Parkett.
-                    1996/1997 mit Prinz Harald Schröder an der Spitze der Narren entsendete jeder Verein ein Tanzmariechen
-                    für eine gemeinsame „Prinzengarde“. Auch fiel die Wahl schnell auf Michaela. Angespornt von dem flotten
-                    Tanz ließ sich Michaela danach bei der KG Blau-Weiß frischen Tanzwind um die Nase wehen, wo sie an der
+                    erst als Piccolo, später auch als Tanzpaar und Tanztrio brachte Michaela so manche flotte Sohle aufs
+                    Parkett.
+                    1996/1997 mit Prinz Harald Schröder an der Spitze der Narren entsendete jeder Verein ein
+                    Tanzmariechen
+                    für eine gemeinsame „Prinzengarde“. Auch fiel die Wahl schnell auf Michaela. Angespornt von dem
+                    flotten
+                    Tanz ließ sich Michaela danach bei der KG Blau-Weiß frischen Tanzwind um die Nase wehen, wo sie an
+                    der
                     Seite von Obermöhn Inge 1997/1998 die Rolle des Pagen für die heißen närrischen Tage übernahm.
                     Bevor sich die KG Blau-Weiß auflöste, wechselte Michaela mit der damaligen Damengarde und war
                     sozusagen eine tanzende Mitgründerin der heutigen „Grün-Weiße Mädcher un Junge“ des Bürgerverein
@@ -74,26 +80,29 @@
                     Bühne und unterstützt Mama Michaela auch in diesem Jahr bei nachmittäglichen Auftritten.
                     „In all den Jahren Ehrengarde war es schon immer etwas Besonderes, wenn der Verein ein
                     Prinzenpaar stellt. Welches kleine Mädchen träumt nicht davon, Prinzessin zu werden?! Umso mehr
-                    freue ich mich, dass dieser Traum für mich dank Prinz Markus in Erfüllung gegangen ist".“ so ihre Lieblichkeit.
+                    freue ich mich, dass dieser Traum für mich dank Prinz Markus in Erfüllung gegangen ist".“ so ihre
+                    Lieblichkeit.
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="soeren" :src="soeren" title="Prinzenführer Sören"/>
+                <TopicHeader id="soeren" :src="soeren" title="Prinzenführer Sören" />
                 <div class="titel">
                     <Paragraph>Prinzenführer Sören von Neoweda zu Aix la Chapelle</Paragraph>
                 </div>
                 <Paragraph>
                     Die karnevalistische Laufbahn von Sören Schröder beginnt vor etwas mehr als 25 Jahren im hessischen
                     Bad Nauheim. Hier erblickte Sören das Licht der Welt und konnte sich, da mit Kappen der Nabelschnur
-                    in die Gardefamilie aufgenommen, auch weitab der mittelrheinischen Gefilde, dem Brauchtum nicht entziehen
+                    in die Gardefamilie aufgenommen, auch weitab der mittelrheinischen Gefilde, dem Brauchtum nicht
+                    entziehen
                     Ob sein Schreien Zustimmung oder Protest sein sollte, konnten Mama Ruth (Hofdame Ruth…) und Papa
                     Markus (Prinz Markus…) nicht mit Sicherheit feststellen. Aber da Sören bis heute aktives Mitglied
                     der Ehrengarde ist, darf von Ersterem ausgegangen werden. Mit zwei Jahren zieht es Sörens Eltern
                     wieder in die Heimat und endlich beginnt auch seine aktive Zeit als Piccolo. Im Grundschulalter
                     versucht sich Sören, inspiriert durch Papa Markus, der da bereits seit vielen Jahren als Protokoller
-                    fester Bestandteil des Neuwieder Karnevals ist, als Büttenredner. In diesem Genre macht er 2002 seine
+                    fester Bestandteil des Neuwieder Karnevals ist, als Büttenredner. In diesem Genre macht er 2002
+                    seine
                     ersten Gehversuche zunächst in der Grundschule Oberbieber. Hier berichtet er vom Leben seiner
                     „karnevalsbekloppten“ Familie, in der „fast das ganze Jahr Fassenacht“ herrscht.
                     „An der Haustür, da fängt das bei uns ja schon an,
@@ -114,10 +123,10 @@
                     Dennoch zieht es ihn aber immer wieder in die Heimat und lässt es sich nicht nehmen, die Garde an
                     Terminen wie Markttage, Rosenmontag oder der eigenen Sitzung zu unterstützen.
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
             <div class="person">
-                <TopicHeader id="sarah" :src="sarah" title="Hofdame Sarah"/>
+                <TopicHeader id="sarah" :src="sarah" title="Hofdame Sarah" />
                 <div class="titel">
                     <Paragraph>Hofdame Sarah vom Rhein-Wied-Eck</Paragraph>
                 </div>
@@ -133,10 +142,13 @@
                     entscheiden, ob sie zu den „Großen“ wechseln oder nicht. Sarah hat sich glücklicherweise dafür
                     entschieden und hat dies bis zum heutigen Tag nicht bereut. Das Piccolokorps lag ihr auch nach
                     ihrer Zeit als aktives Piccolo sehr am Herzen. So war es nicht verwunderlich, dass sie später viele
-                    Jahre die Kleinen betreut und trainiert hat. Außerdem sorgt Sarah auch dafür, dass der Nachwuchs nicht
+                    Jahre die Kleinen betreut und trainiert hat. Außerdem sorgt Sarah auch dafür, dass der Nachwuchs
+                    nicht
                     ausgeht, denn ihre Tochter Philine hat das gleiche Schicksal ereilt, wie bereits Mutter Sarah, Tante
-                    Manuela und Onkel Stephan – Die Mitgliedschaft kraft Geburt. Auch Töchterchen Nalia Estelle, die erst
-                    im Juli 2019 das Licht der Welt erblickte, trägt bereits mit mehr oder weniger Begeisterung die kleine
+                    Manuela und Onkel Stephan – Die Mitgliedschaft kraft Geburt. Auch Töchterchen Nalia Estelle, die
+                    erst
+                    im Juli 2019 das Licht der Welt erblickte, trägt bereits mit mehr oder weniger Begeisterung die
+                    kleine
                     Gardeuniform. Tochter Philine wird die Mama natürlich in diesem Jahr bei den nachmittäglichen
                     Auftritten unterstützen. Als aktives Mariechen schwingt Sarah seit ihrem 14. Lebensjahr das Tanzbein
                     und begeistert auch mit der Traumtänzerkompanie die Zuschauer. Da bereits Vater, Mutter und
@@ -145,11 +157,11 @@
                     Prinzessin Michaela, sie bat, als ihre persönliche Hofdame im Hofstaat 2019/2020 zu fungieren. Sarah
                     ließ sich nicht lange bitten und freut sich auf eine tolle Session.
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="dieter" :src="dieter" title="Mundschenk Dieter"/>
+                <TopicHeader id="dieter" :src="dieter" title="Mundschenk Dieter" />
                 <div class="titel">
                     <Paragraph>Mundschenk Dieter, der singende Germane mit dem grünen Daumen</Paragraph>
                 </div>
@@ -165,56 +177,59 @@
                     Eltern probte und selbstverständlich an die traditionellen Steckenpferd-Reiter- Rennen.
                     In die herrliche 5. Jahreszeit fällt auch sein Namenstag. Also wurde dieser Tag im Januar immer als
                     Faschingsparty mit Kostümen gefeiert, damals natürlich noch mit Limo …
-                    Viele schöne Karnevalssitzungen feierte er mit seinen Freunden  im gemütlichen Pfarrsaal von Hl.
+                    Viele schöne Karnevalssitzungen feierte er mit seinen Freunden im gemütlichen Pfarrsaal von Hl.
                     Kreuz, da durfte er natürlich nicht fehlen.
                     Und so kam es auch, dass er völlig unvorbereitet bei einem Auftritt der Ehrengarde vom damaligen
-                    Kommandeur Manfred Wertgen auf die Bühne gebeten wurde. Er  musste sofort mitsingen und mittanzen.
+                    Kommandeur Manfred Wertgen auf die Bühne gebeten wurde. Er musste sofort mitsingen und mittanzen.
                     Von da an hatte er richtig „Blut geleckt“.
                     Als „alter Knochen“ wurde er zwar nicht Tänzer in der Garde, aber 2014 zum Ehrenoffizier ernannt,
                     eine besondere Ehre für ihn. 2012 durfte er als (Tages-)Hofnarr an der Seite von Prinz Karl-Heinz
-                    & Prinzessin Christa II den  Neuwieder Rosenmontag in allen Zügen genießen: Aufstellung,
+                    & Prinzessin Christa II den Neuwieder Rosenmontag in allen Zügen genießen: Aufstellung,
                     Prinzenwagen, RoMo- Umzug durch unsere sonnige Deichstadt und After- Zooch- Party inklusive ….
-                    Damals träumte er  schon: „Das müsste man doch noch einmal erleben …!!“
+                    Damals träumte er schon: „Das müsste man doch noch einmal erleben …!!“
                     Und ja, wenn die Garde 6 x 11 Jahre Jubiläum feiert, geht sein Traum in Erfüllung!
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="jutta" :src="jutta" title="Hofdame Jutta"/>
+                <TopicHeader id="jutta" :src="jutta" title="Hofdame Jutta" />
                 <div class="titel">
                     <Paragraph>Hofdame Jutta vom steilen Zahn</Paragraph>
                 </div>
                 <Paragraph>
-                    Sie ist bekennende  Näiwidder  Schärjerin  aus dem schönen Sonnenland.
+                    Sie ist bekennende Näiwidder Schärjerin aus dem schönen Sonnenland.
                     Schon als kleines Mädchen war sie fasziniert vom karnevalistischen Treiben. Meist verkleidet als
                     Nscho-tschi, lange Zöpfe und Feder im Haar.
                     Im Bootshaus an der Rheinbrücke fand alles seinen Anfang. Da damals die Wirtsleute Verwandte waren,
-                    durfte sie sich dort als Dreijährige zwischen die Feiernden mischen - ihr  großer  Bruder hatte
+                    durfte sie sich dort als Dreijährige zwischen die Feiernden mischen - ihr großer Bruder hatte
                     seine liebe Not auf sie aufzupassen. Sie aber war glücklich und schwärmte ihrer Mutter später vor:
                     “Es war toll, so viele Leute!“
                     Später feierte sie mit Freunden stets von Schwerdonnerstag bis Rosenmontag. Zuerst Party im
                     Aufenthaltsraum der Baumschule, dann Steckenpferd-Reiter-Sitzung und Pfarrkarneval, um danach alle
                     Karnevalszüge in Neuwied und Umgebung unsicher zu machen.
-                    Ein besonderes Highlight war aber immer der  Abschluss am Rosenmontag im Heimathaus, wo sie mit den
-                    Freunden mehr als einmal zu der alten Tonaufnahme von Wittmann´s  Ann das Schärjerlied mit schmetterte.
+                    Ein besonderes Highlight war aber immer der Abschluss am Rosenmontag im Heimathaus, wo sie mit den
+                    Freunden mehr als einmal zu der alten Tonaufnahme von Wittmann´s Ann das Schärjerlied mit
+                    schmetterte.
                     Schon als Jugendliche engagierte sie sich im Steckenpferd-Reiter-Verein, bei dem sie seit Mitte der
                     70er Jahre Mitglied ist. Zur Ehrengarde stieß sie durch einen Freund unseres Sohnes, dessen ganze
                     Familie der Ehrengarde „verfallen“ ist. Bei diesem tollen Haufen fühlt sie sich auch sehr wohl.
-                    Daher ist sie sehr traurig, dass sie aus gesundheitlichen Gründen ihre Position als Hofdame nicht ausüben kann.
+                    Daher ist sie sehr traurig, dass sie aus gesundheitlichen Gründen ihre Position als Hofdame nicht
+                    ausüben kann.
                     Allen anderen wünscht ich aber eine erfolgreiche Session: „Habt Spaß und bleibt gesund!!!“
                     Drei Mol Näiwidd Alaaf!!!
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="mareike" :src="mareike" title="Hofnarr Mareike"/>
+                <TopicHeader id="mareike" :src="mareike" title="Hofnarr Mareike" />
                 <div class="titel">
                     <Paragraph>Der tanzende Hofnarr Mareike vom weißen Berg</Paragraph>
                 </div>
                 <Paragraph>
-                    Auch Mareike ist eines dieser „armen“ Ehrengarde-Kinder. Auch hier kann man nur sagen: Sie hatte gar keine Wahl!
+                    Auch Mareike ist eines dieser „armen“ Ehrengarde-Kinder. Auch hier kann man nur sagen: Sie hatte gar
+                    keine Wahl!
                     Per Geburt im Jahr 1992 gleich in doppelter Hinsicht vorbelastet, konnte sie sich dem Bazillus
                     Karnivalis nicht entziehen, war doch Mama Sabine Mitglied der Ehrengarde und Papa Carsten stolzer
                     Offizier der Funken Rot-Weiß.
@@ -227,18 +242,19 @@
                     2010 tüfftelt sie für diese Gruppe Themen, Schritte und Musik aus und trainiert sie beinahe das
                     ganze Jahr hindurch. Wen wundert es, dass ihre Kenntnisse im Tänze schreiben und trainieren immer
                     mehr gefragt waren innerhalb der Garde. So trainiert sie mit Prinz Markus seit 2014 auch die aktive
-                    Garde, was seitdem immer wieder die Frage aufwirft: Was nehmen die beiden eigentlich ein beim Tänze schreiben?!
+                    Garde, was seitdem immer wieder die Frage aufwirft: Was nehmen die beiden eigentlich ein beim Tänze
+                    schreiben?!
                     Seit 2017 unterstützt Mareike auch den Festausschuss bei der jährlichen Kindersitzung und mimt dort
                     den „Pausenclown“ und animiert die Kinder zum Mitmachen. Ganz nach ihrem Lebensmotto „tanzend
                     bewegt es sich leichter durchs Leben“ erfüllt sich in diesem Jahr ein langgehegter Traum für sie.
                     Prinz Markus und seine Lieblichkeit mussten Mareike nicht lange bitten und freuen sich sehr, dass
                     sie in diesem Jahr den Hofstaat ergänzt.
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="ute" :src="ute" title="Hofdame Ute"/>
+                <TopicHeader id="ute" :src="ute" title="Hofdame Ute" />
                 <div class="titel">
                     <Paragraph>Hofdame Ute, die Schamanin vom Goldberg</Paragraph>
                 </div>
@@ -266,20 +282,23 @@
                     im schönen Irlich.
                     Seit 2017 ist „die gute Ute“ Mitglied in der Ehrengarde-Familie und aus dieser bereits nach so
                     kurzer Zeit nicht mehr wegzudenken. Wann und wo auch immer ein Mitglied wieder bühnenfit gemacht
-                    werden oder die Truppe mit ein paar leckeren Häppchen bei Laune gehalten werden muss, ist Ute nicht fern.
-                    Ute freut sich auf diese besondere Session und bereichert das Prinzenteam durch ihre unerschütterliche
+                    werden oder die Truppe mit ein paar leckeren Häppchen bei Laune gehalten werden muss, ist Ute nicht
+                    fern.
+                    Ute freut sich auf diese besondere Session und bereichert das Prinzenteam durch ihre
+                    unerschütterliche
                     gute Laune.
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="hansMartin" :src="hansMartin" title="Leibkoch Hans-Martin"/>
+                <TopicHeader id="hansMartin" :src="hansMartin" title="Leibkoch Hans-Martin" />
                 <div class="titel">
                     <Paragraph>Leibkoch und Hofkonditor Hans-Martin von der Backstuff zum Kochdippe</Paragraph>
                 </div>
                 <Paragraph>
-                    Als zweites von fünf Kindern erblickte Hans-Martin 1956 in der Neuwieder Schloßstraße das Licht der Welt.
+                    Als zweites von fünf Kindern erblickte Hans-Martin 1956 in der Neuwieder Schloßstraße das Licht der
+                    Welt.
                     Als Sohn eines Bäckermeisters wurde ihm das backende Handwerk bereits in die Wiege gelegt.
                     Als großer Bruder von Markus und Enkel von Oma Helene (in der Garde liebevoll „Oma Busch“ genannt),
                     die bis zu ihrem Tod 1987 glühende Anhängerin der Garde war, konnte sich auch Hans-Martin dem Virus
@@ -301,11 +320,11 @@
                     Fähigkeiten, die richtigen Regler zum richtigen Zeitpunkt zu betätigen, würde manches Gesprochene
                     Wort im Saal ungehört verhallen. Und da ihm das Technische liegt, kommen alle
                 </Paragraph>
-                <Separator/>
+                <Separator />
             </div>
 
             <div class="person">
-                <TopicHeader id="ruth" :src="ruth" title="Hofdame Ruth"/>
+                <TopicHeader id="ruth" :src="ruth" title="Hofdame Ruth" />
                 <div class="titel">
                     <Paragraph>Hofdame Ruth von Feldkirgen zu Bivera</Paragraph>
                 </div>
@@ -313,12 +332,15 @@
                     Es hätte ganz anders kommen können…
 
                     Als Ur-Feldkircherin war die kleine Ruth von Hause aus eher einseitig karnevalistisch vorbelastet.
-                    Vater Eberhard, ein waschechter gebürtiger Kölner, war Mitbegründer des Pfarrkarnevals in Feldkirchen
-                    und somit Gründungsmitglied des Elferrat St. Michael. So konnte sich auch Ruth schon in früher Kindheit
+                    Vater Eberhard, ein waschechter gebürtiger Kölner, war Mitbegründer des Pfarrkarnevals in
+                    Feldkirchen
+                    und somit Gründungsmitglied des Elferrat St. Michael. So konnte sich auch Ruth schon in früher
+                    Kindheit
                     dem Karneval nicht gänzlich entziehen.
                     Allerdings dauerte es doch noch ein Weilchen, bis sie im Feldkirchener Karneval die ersten
                     Bühnenerfahrungen sammelte. Die ersten „karnevalistischen Gehversuche“ unternahm Ruth im
-                    Instrumentalkreis bei den Sitzungen des Elferrat St. Michael, damals noch in der Aula der Blindenschule.
+                    Instrumentalkreis bei den Sitzungen des Elferrat St. Michael, damals noch in der Aula der
+                    Blindenschule.
                     Vielleicht wäre das zarte karnevalistische Pflänzchen auch weiterhin weitgehend unentdeckt
                     geblieben, hätte Ruth nicht ihren späteren Ehemann und Prinzen Markus kennen und lieben gelernt.
                     Denn als Grenadier der Ehrengarde blieben Markus‘ Lebensgefährtin Ruth nur zwei Möglichkeiten:
@@ -327,7 +349,8 @@
                     Glücklicherweise entschied sich Ruth für die zweite Variante und begann 1988 ihre karnevalistische
                     Laufbahn als Mariechen der Ehrengarde.
                     Nach einem kurzen „Auslandsaufenthalt“ abseits des Rheinlandes im hessischen Bad Nauheim, wo auch
-                    Sohn Sören das Licht der Welt erblickte, zog es Ruth und Markus aber schnell wieder ins heimische Neuwied.
+                    Sohn Sören das Licht der Welt erblickte, zog es Ruth und Markus aber schnell wieder ins heimische
+                    Neuwied.
                     Nach der Geburt von Sohn Bjarne entschied sich Ruth fortan das Reservistenkorps zu ergänzen. Seit es
                     im Gardetanz die „tanzende Reserve“ gibt, ist auch Ruth hier mit dabei.
                     Dem Pfarrkarneval hat sie dabei nie den Rücken gekehrt. Als Mitglied im Kirchenchor St. Bonifatius
@@ -338,8 +361,8 @@
                     Hierbei werden ihre Nerven wie Drahtseile, die sie täglich als Erzieherin im katholischen
                     Kindergarten St. Peter und Paul Irlich unter Beweis stellt, sicher hilfreich sein.
                 </Paragraph>
-                <Separator/>
-              <SocialMedia/>
+                <Separator />
+                <SocialMedia />
             </div>
         </div>
     </div>
@@ -350,8 +373,6 @@ import Separator from '../components/atoms/Separator.vue';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
-import Picture from '../components/atoms/Picture.vue';
-import Contacts from '../components/organisms/Contacts.vue';
 import SocialMedia from '../components/atoms/SocialMedia.vue';
 
 import hofstaat from '../assets/photos/2019/hofstaat/hofstaat.jpg';
@@ -375,8 +396,6 @@ export default {
     Separator,
     Paragraph,
     Headline,
-    Picture,
-    Contacts,
   },
   data() {
     return {
