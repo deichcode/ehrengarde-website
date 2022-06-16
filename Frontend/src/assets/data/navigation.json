@@ -3,10 +3,6 @@
     "text": "Start",
     "route": "/"
   },
-  {
-    "text": "Termine",
-    "route": "/termine"
-  },
  {
     "text": "Hofstaat",
     "route": "/hofstaat"
