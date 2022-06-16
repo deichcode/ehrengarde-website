@@ -81,7 +81,7 @@
       <Contacts :contacts="[
       {
       position: 'Kommandeur',
-      name: 'Günter Kutscher',
+      name: 'Gerd Schanz',
       email: 'kontakt-reservisten@ehrengarde-neuwied.de'}]"/>
       <Separator/>
 
