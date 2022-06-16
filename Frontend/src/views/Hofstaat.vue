@@ -10,19 +10,8 @@
 
 <template>
     <div class="content">
-        <Headline styling="page-title" :level=2>Der Hofstaat</Headline>
-        <Separator/>
-        <div class="group">
-        <Picture :src="hofstaat"/>
-            <Paragraph>Wenn Sie unseren Besuch wünschen wenden Sie sich bitte an folgenden Kontakt.</Paragraph>
-            <Contacts  :contacts="[
-      {image: alex,
-      position: 'Kommandeur',
-      name: 'Alexander Wertgen',
-      email: 'kommandeur@ehrengarde-neuwied.de'}]"></Contacts>
-
-        </div>
-        <Separator/>
+        <Headline styling="page-title" :level=2>Der Hofstaat der Session 2019/20</Headline>
+        <Separator />
         <div class="hofstaat">
             <div class="person">
                 <TopicHeader id="markus" :src="markus" title="Prinz Markus"/>
