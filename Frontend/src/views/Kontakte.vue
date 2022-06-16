@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ImageMarcel from '../assets/photos/potraits/marcel.jpg';
+import ImagePlaceholder from '../assets/photos/potraits/placeholder.png';
 import ImageMarkus from '../assets/photos/potraits/markus.jpg';
 import ImageAlex from '../assets/photos/potraits/alexander.jpeg';
 import Contacts from '../components/organisms/Contacts.vue';
@@ -33,8 +33,8 @@ export default {
   data() {
     return {
       marcel: {
-        image: ImageMarcel,
-        name: 'Marcel Thran',
+        image: ImagePlaceholder,
+        name: 'Stefan Kugler',
         position: 'Geschäftsführer',
         email: 'geschaeftsfuehrer@ehrengarde-neuwied.de',
       },
