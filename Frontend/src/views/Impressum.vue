@@ -33,8 +33,8 @@
           <br/>
           Neuwied 56564
           <br/>
-          <!-- <a href="tel:+4915151453834">(+49) 151 51453834</a>
-          <br/> -->
+          <a href="tel:+492631958788">(+49) 2631 958 788</a>
+          <br/>
         </p>
         <p>
           Eingetragen beim Amtsgericht
