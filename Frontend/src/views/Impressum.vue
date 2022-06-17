@@ -25,13 +25,15 @@
           <a href="mailto:info@ehrengarde-neuwied.de">info@ehrengarde-neuwied.de</a>
         </p>
         <p>
-          Marcel Thran
+          Geschäftsführer
           <br/>
-          Merowingerstraße 9
+          Stefan Kugler
           <br/>
-          56567 Neuwied
+          Elisabethstraße 38
           <br/>
-          <a href="tel:+4915151453834">(+49) 151 51453834</a>
+          Neuwied 56564
+          <br/>
+          <a href="tel:+492631958788">(+49) 2631 958 788</a>
           <br/>
         </p>
         <p>
