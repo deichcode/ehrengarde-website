@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace Ehrengarde.Api
 {
     public class Startup
     {
-        private readonly IHostingEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
 
-        public Startup(IConfiguration configuration, IHostingEnvironment environment)
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             _environment = environment;
             Configuration = configuration;
@@ -37,7 +38,11 @@ namespace Ehrengarde.Api
                             .AllowAnyMethod();
                     });
             });
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options =>
+            {
+                options.EnableEndpointRouting = false;
+            } 
+            );
             //if (_environment.IsDevelopment())
             //{
             //    services.AddSingleton<ICalendarService, CalendarService>();
@@ -50,10 +55,11 @@ namespace Ehrengarde.Api
             services.AddSingleton<IHttpService, HttpService>();
             services.AddSingleton<IHttpAdatper, HttpAdapter>();
             services.AddSingleton<ICalendarAdapter, CalendarAdapter>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -71,7 +77,7 @@ namespace Ehrengarde.Api
             ServeSpaFiles(app, env);
         }
 
-        private static void ServeSpaFiles(IApplicationBuilder app, IHostingEnvironment env)
+        private static void ServeSpaFiles(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseStaticFiles();
             app.UseSpa(spa =>
