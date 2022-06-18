@@ -9,6 +9,7 @@ namespace Ehrengarde.Api.Adapters.HttpAdapter
         public HttpAdapter()
         {
             _httpClient = new HttpClient();
+            _httpClient.DefaultRequestHeaders.Add("User-Agent", "Ehrengarde-Api/1.0.0");
         }
         
         public Task<HttpResponseMessage> GetAsync(string requestUri)
