@@ -11,12 +11,18 @@
     columns: unset;
   }
 
+  .no-events {
+    text-align: center;
+    columns: unset;
+  }
+
 </style>
 
 <template>
   <div class="content">
     <Headline :level=2 styling="page-title">Termine</Headline>
     <Paragraph class="is-loading" v-if="isLoading">Termine werden geladen…</Paragraph>
+    <Paragraph class="no-events" v-if="noEvents">Aktuell stehen keine Termine an.</Paragraph>
     <div class="events_wrapper">
       <Event v-for="event in currentEvents"
              :key="event.uid"
@@ -51,6 +57,9 @@ export default {
   computed: {
     currentEvents() {
       return this.events.filter((e) => e.start.isAfter(this.yesterday));
+    },
+    noEvents() {
+      return !this.isLoading && !this.events.length;
     },
   },
   mounted() {
