@@ -9,7 +9,7 @@
       Sie möchten mit uns in Kontakt treten? Wir freuen uns auf ihre E-Mail.
     </p>
     <div id="kontakte">
-      <Contacts :contacts="[marcel, markus, alex]" />
+      <Contacts :contacts="[stefan, markus, alex]" />
     </div>
     <Seperator/>
     <SocialMedia/>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ImagePlaceholder from '../assets/photos/potraits/placeholder.png';
+import ImageStefan from '../assets/photos/potraits/ImageStefan.jpg';
 import ImageMarkus from '../assets/photos/potraits/markus.jpg';
 import ImageAlex from '../assets/photos/potraits/alexander.jpeg';
 import Contacts from '../components/organisms/Contacts.vue';
@@ -32,8 +32,8 @@ export default {
   },
   data() {
     return {
-      marcel: {
-        image: ImagePlaceholder,
+      stefan: {
+        image: ImageStefan,
         name: 'Stefan Kugler',
         position: 'Geschäftsführer',
         email: 'geschaeftsfuehrer@ehrengarde-neuwied.de',
