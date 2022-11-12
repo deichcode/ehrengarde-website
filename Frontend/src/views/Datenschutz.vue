@@ -20,9 +20,9 @@
           Sinne von Art. 4 Nr. 7 DSGVO ist
         </Paragraph>
         <Paragraph>
-          Ehrengarde der Stadt Neuwied e. V. <br/>
-          Merowingerstraße 9 <br/>
-          56567 Neuwied <br/>
+          Ehrengarde der Stadt Neuwied e. V.<br/>
+          Elisabethstraße 38<br/>
+          56564 Neuwied<br/>
         </Paragraph>
 
         <Headline :level=3 styling="card-title">
