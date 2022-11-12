@@ -30,6 +30,9 @@ export default new Router({
       },
     },
     {
+      path: '/prinzenpaare',
+      name: 'Prinzenpaare',
+      component: () => import('./views/Prinzenpaare.vue'),
       meta: {
         title: 'Kontakt',
       },

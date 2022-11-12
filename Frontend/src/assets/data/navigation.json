@@ -8,6 +8,8 @@
     "route": "/termine"
   },
  {
+    "text": "Prinzenpaare",
+    "route": "/prinzenpaare"
   },
   {
     "text": "Corps",
