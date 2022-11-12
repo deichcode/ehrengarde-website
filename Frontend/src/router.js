@@ -30,9 +30,6 @@ export default new Router({
       },
     },
     {
-      path: '/hofstaat',
-      name: 'Hofstaat',
-      component: () => import('./views/Hofstaat.vue'),
       meta: {
         title: 'Kontakt',
       },
