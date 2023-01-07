@@ -79,7 +79,7 @@
         Gesicht.
       </Paragraph>
       <Contacts :contacts="[
-      {
+      {image: gerd,
       position: 'Kommandeur',
       name: 'Gerd Schanz',
       email: 'kontakt-reservisten@ehrengarde-neuwied.de'}]"/>
@@ -129,6 +129,7 @@ import reservisten from '../assets/photos/2019/sitzung/reservisten.jpg';
 import ehrenoffiziere from '../assets/photos/2018/sitzung/ehrenoffiziere.jpg';
 import freizeitPicccolo from '../assets/photos/2019/freizeitPiccolo.jpg';
 import alex from '../assets/photos/potraits/alexander.jpeg';
+import gerd from '../assets/photos/potraits/gerd.jpg';
 
 export default {
   name: 'Corps',
@@ -149,6 +150,7 @@ export default {
       reservisten,
       ehrenoffiziere,
       alex,
+      gerd,
       freizeitPicccolo,
     };
   },

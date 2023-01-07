@@ -30,9 +30,9 @@ export default new Router({
       },
     },
     {
-      path: '/hofstaat',
-      name: 'Hofstaat',
-      component: () => import('./views/Hofstaat.vue'),
+      path: '/prinzenpaare',
+      name: 'Prinzenpaare',
+      component: () => import('./views/Prinzenpaare.vue'),
       meta: {
         title: 'Kontakt',
       },
@@ -75,14 +75,6 @@ export default new Router({
       component: () => import('./views/Datenschutz.vue'),
       meta: {
         title: 'Datenschutz',
-      },
-    },
-    {
-      path: '/sponsoren',
-      name: 'Sponsoren',
-      component: () => import('./views/Sponsoren.vue'),
-      meta: {
-        title: 'Sponsoren',
       },
     },
   ],
