@@ -77,14 +77,6 @@ export default new Router({
         title: 'Datenschutz',
       },
     },
-    {
-      path: '/sponsoren',
-      name: 'Sponsoren',
-      component: () => import('./views/Sponsoren.vue'),
-      meta: {
-        title: 'Sponsoren',
-      },
-    },
   ],
   scrollBehavior() {
     return { x: 0, y: 0 };
