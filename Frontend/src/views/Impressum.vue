@@ -37,7 +37,7 @@
           <br/>
         </p>
         <p>
-          Eingetragen beim Amtsgericht
+          Eingetragen beim Amtsgericht Montabaur
           <br/>
           unter Vereinsregister Nr. 11338
         </p>
