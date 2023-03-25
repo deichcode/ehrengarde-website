@@ -20,7 +20,7 @@
     "leaflet": "^1.7.1",
     "leaflet-geosearch": "^3.3.2",
     "mobile-device-detect": "^0.4.3",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.33",
     "normalize.css": "^8.0.1",
     "vue": "^2.6.12",
