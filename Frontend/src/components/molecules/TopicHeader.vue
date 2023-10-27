@@ -6,7 +6,6 @@
       position: relative;
 
       .photo {
-        height: 500px;
         width: 100%;
         object-fit: cover;
       }
