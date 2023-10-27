@@ -26,7 +26,7 @@ export default new Router({
       name: 'Corps',
       component: () => import('./views/Corps.vue'),
       meta: {
-        title: 'Kontakt',
+        title: 'Crops',
       },
     },
     {
@@ -34,7 +34,7 @@ export default new Router({
       name: 'Prinzenpaare',
       component: () => import('./views/Prinzenpaare.vue'),
       meta: {
-        title: 'Kontakt',
+        title: 'Prinzenpaare',
       },
     },
     {
@@ -58,7 +58,7 @@ export default new Router({
       name: 'Termine',
       component: () => import('./views/Termine.vue'),
       meta: {
-        title: 'Kontakt',
+        title: 'Termine',
       },
     },
     {
@@ -66,7 +66,7 @@ export default new Router({
       name: 'Impressum',
       component: () => import('./views/Impressum.vue'),
       meta: {
-        title: 'Kontakt',
+        title: 'Impressum',
       },
     },
     {
