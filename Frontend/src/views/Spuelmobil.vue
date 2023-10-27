@@ -44,8 +44,8 @@
     </Paragraph>
     <Paragraph>
       Wir haben die Wintermonate genutzt, um die Bedürfnisse zusammen zu stellen und ein
-      ausgereiftes Konzept zu erstellen. Wir starteten gemeinsam mit der VR Bank RheinAhrEifel
-      eG unter dem Motto „Viele schaffen mehr“ eine Crowdfunding-Aktion. Zeitgleich suchten wir
+      ausgereiftes Konzept zu erstellen. Wir starteten gemeinsam mit der <span style="hyphens: none;">VR Bank RheinAhrEifel
+      eG</span> unter dem Motto „Viele schaffen mehr“ eine Crowdfunding-Aktion. Zeitgleich suchten wir
       nach einem passenden „fahrbaren Untersatz“ und erkundeten den Markt nach Geschirr und Spülmaschinen.
     </Paragraph>
     <Paragraph>
@@ -117,6 +117,11 @@
     <Paragraph>
       Weitere Infos unter <a href="mailto:spuelmobil@ehrengarde-neuwied.de">spuelmobil@ehrengarde-neuwied.de</a>
     </Paragraph>
+    <Headline :level="3" styling="page-title">Bilder</Headline>
+    <TopicHeader :src="spuelmobil2" />
+    <TopicHeader :src="spuelmobil3" />
+    <TopicHeader :src="spuelmobil4" />
+    <TopicHeader :src="spuelmobil5" />
     <Headline :level=3 styling="page-title">Sponsoren</Headline>
     <div id="sponsoren">
       <div class="sponsor-row">
@@ -142,6 +147,10 @@ import Headline from '../components/atoms/Headline.vue';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
 
 import spuelmobil from '../assets/photos/spuelmobile/spuelmobil_1.jpg';
+import spuelmobil2 from '../assets/photos/spuelmobile/spuelmobil_2.jpg';
+import spuelmobil3 from '../assets/photos/spuelmobile/spuelmobil_3.jpg';
+import spuelmobil4 from '../assets/photos/spuelmobile/spuelmobil_4.jpg';
+import spuelmobil5 from '../assets/photos/spuelmobile/spuelmobil_5.jpg';
 import vrBank from '../assets/photos/sponsoren/vr_bank_rae.jpg';
 import bleser from '../assets/photos/sponsoren/bleser.jpg';
 import krueger from '../assets/photos/sponsoren/krueger.png';
@@ -160,6 +169,10 @@ export default {
   data() {
     return {
       spuelmobil,
+      spuelmobil2,
+      spuelmobil3,
+      spuelmobil4,
+      spuelmobil5,
       vrBank,
       bleser,
       krueger,
