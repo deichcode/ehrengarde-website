@@ -1,3 +1,35 @@
+<style lang="scss">
+#sponsoren {
+  background-color: $white;
+  padding: 1rem;
+
+  .sponsor-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      max-width: 100%;
+    }
+
+    &.row-2 {
+
+      img {
+        max-width: calc(50% - 10px);
+      }
+    }
+
+    &.row-3 {
+      column-gap: 20px;
+
+      img {
+        max-width: calc(33% - 20px);
+      }
+    }
+  }
+}
+</style>
+
 <template>
   <div class="content">
     <Headline :level=2 styling="page-title">Eine saubere Sache…</Headline>
@@ -85,25 +117,55 @@
     <Paragraph>
       Weitere Infos unter <a href="mailto:spuelmobil@ehrengarde-neuwied.de">spuelmobil@ehrengarde-neuwied.de</a>
     </Paragraph>
+    <Headline :level=3 styling="page-title">Sponsoren</Headline>
+    <div id="sponsoren">
+      <div class="sponsor-row">
+        <img :src="vrBank" />
+      </div>
+      <div class="sponsor-row row-2">
+        <img :src="bleser" />
+        <img :src="krueger" style="background-color: black; padding:10px" />
+      </div>
+      <div class="sponsor-row row-3">
+        <img :src="swn" />
+        <img :src="dupp" />
+        <img :src="sparkasse" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import spuelmobil from '../assets/photos/spuelmobile/spuelmobil_1.jpg';
+// import Separator from '../components/atoms/Separator.vue';
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
+
+import spuelmobil from '../assets/photos/spuelmobile/spuelmobil_1.jpg';
+import vrBank from '../assets/photos/sponsoren/vr_bank_rae.jpg';
+import bleser from '../assets/photos/sponsoren/bleser.jpg';
+import krueger from '../assets/photos/sponsoren/krueger.png';
+import swn from '../assets/photos/sponsoren/swn_large.png';
+import dupp from '../assets/photos/sponsoren/dupp.png';
+import sparkasse from '../assets/photos/sponsoren/sparkasse_large.png';
 
 export default {
   name: 'home',
   components: {
     Headline,
     Paragraph,
+    // Separator,
     TopicHeader,
   },
   data() {
     return {
       spuelmobil,
+      vrBank,
+      bleser,
+      krueger,
+      swn,
+      dupp,
+      sparkasse,
     };
   },
 };
