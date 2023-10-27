@@ -7,10 +7,6 @@
     "text": "Termine",
     "route": "/termine"
   },
- {
-    "text": "Prinzenpaare",
-    "route": "/prinzenpaare"
-  },
   {
     "text": "Corps",
     "route": "/corps"
@@ -30,5 +26,9 @@
   {
     "text": "Chronik",
     "route": "/chronik"
-  }
+  },
+  {
+     "text": "Prinzenpaare",
+     "route": "/prinzenpaare"
+   }
 ]
