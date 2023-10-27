@@ -24,6 +24,10 @@
     "route": "/kontakte"
   },
   {
+    "text": "Spülmobil",
+    "route": "/spuelmobil"
+  },
+  {
     "text": "Chronik",
     "route": "/chronik"
   }
