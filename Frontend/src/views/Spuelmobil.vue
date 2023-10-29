@@ -42,18 +42,21 @@
       Dieses Geschirr muss jedoch auch vor Ort gespült werden. So musste nicht nur Geschirr,
       sondern ein Spülmobil her.
     </Paragraph>
+    <Picture :src="spuelmobil5" />
     <Paragraph>
       Wir haben die Wintermonate genutzt, um die Bedürfnisse zusammen zu stellen und ein
       ausgereiftes Konzept zu erstellen. Wir starteten gemeinsam mit der <span style="hyphens: none;">VR Bank RheinAhrEifel
       eG</span> unter dem Motto „Viele schaffen mehr“ eine Crowdfunding-Aktion. Zeitgleich suchten wir
       nach einem passenden „fahrbaren Untersatz“ und erkundeten den Markt nach Geschirr und Spülmaschinen.
     </Paragraph>
+    <Picture :src="spuelmobil2" />
     <Paragraph>
       Um unsere Bedürfnisse zu erfüllen, haben wir den Bau des Spülmobiles mit einer kleinen Mannschaft
       selbst durchgeführt und aus einem Anhänger ein Spülmobil mit zwei Spülmaschinen, zwei Waschbecken
       mit Handbrause und Warmwasserboiler gebaut, welches noch genügend Platz hat um ausreichend Geschirr zu
       transportieren.
     </Paragraph>
+    <Picture :src="spuelmobil3" />
     <Headline :level=3 styling="page-title">Beladung</Headline>
     <ul>
       <li>
@@ -114,14 +117,11 @@
         Gesamtanschlusswert ca. 12&nbsp;kW
       </li>
     </ul>
+
+    <Headline :level=3 styling="page-title">Infos</Headline>
     <Paragraph>
       Weitere Infos unter <a href="mailto:spuelmobil@ehrengarde-neuwied.de">spuelmobil@ehrengarde-neuwied.de</a>
     </Paragraph>
-    <Headline :level="3" styling="page-title">Bilder</Headline>
-    <TopicHeader :src="spuelmobil2" />
-    <TopicHeader :src="spuelmobil3" />
-    <TopicHeader :src="spuelmobil4" />
-    <TopicHeader :src="spuelmobil5" />
     <Headline :level=3 styling="page-title">Sponsoren</Headline>
     <div id="sponsoren">
       <div class="sponsor-row">
@@ -145,6 +145,7 @@
 import Paragraph from '../components/atoms/Paragraph.vue';
 import Headline from '../components/atoms/Headline.vue';
 import TopicHeader from '../components/molecules/TopicHeader.vue';
+import Picture from '../components/atoms/Picture.vue';
 
 import spuelmobil from '../assets/photos/spuelmobile/spuelmobil_1.jpg';
 import spuelmobil2 from '../assets/photos/spuelmobile/spuelmobil_2.jpg';
@@ -163,7 +164,7 @@ export default {
   components: {
     Headline,
     Paragraph,
-    // Separator,
+    Picture,
     TopicHeader,
   },
   data() {
