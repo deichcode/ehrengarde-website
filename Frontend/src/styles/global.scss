@@ -61,7 +61,12 @@ a {
 
 p {
   color: $light-gray;
-  line-height: 1.2;
+}
+
+ul {
+  li {
+    line-height: 1.4;
+  }
 }
 
 main {
