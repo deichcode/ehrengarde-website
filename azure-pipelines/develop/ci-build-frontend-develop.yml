@@ -17,9 +17,9 @@ steps:
 
 - script: |
     cd Frontend
-    npm install
-    npm run build:develop
-  displayName: 'npm install and build'
+    yarn install
+    yarn build:develop
+  displayName: 'yarn install and build:develop'
 
 - task: PublishBuildArtifacts@1
   inputs:
