@@ -64,7 +64,7 @@
 </style>
 
 <template>
-  <Card class="event">
+  <Card class="event" v-if="isVisible">
     <p class="event_title">{{title}}</p>
     <p class="event_datetime">
       <!--      <font-awesome-icon icon="calendar-alt" class="event_calendar_icon"/>-->
@@ -138,7 +138,34 @@ export default {
       isWinPhone,
       isMobile,
       isMacOS: osName.includes('Mac'),
+      isVisible: true, // Track visibility
     };
+  },
+  mounted() {
+    this.setupIntersectionObserver();
+    this.isVisible = true;
+  },
+  methods: {
+    setupIntersectionObserver() {
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+      };
+
+      const callback = (entries, observer) => {
+        entries.forEach((entry) => {
+          // debugger;
+          if (entry.isIntersecting) {
+            this.isVisible = true;
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(callback, options);
+      observer.observe(this.$el);
+    },
   },
 };
 </script>
