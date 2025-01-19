@@ -17,8 +17,8 @@
 </template>
 
 <script>
+import ImageSoeren from '../assets/photos/potraits/soeren.jpg';
 import ImageStefan from '../assets/photos/potraits/ImageStefan.jpg';
-import ImageMarkus from '../assets/photos/potraits/markus.jpg';
 import ImageAlex from '../assets/photos/potraits/alexander.jpeg';
 import Contacts from '../components/organisms/Contacts.vue';
 import Headline from '../components/atoms/Headline.vue';
@@ -33,14 +33,14 @@ export default {
   data() {
     return {
       stefan: {
-        image: ImageStefan,
-        name: 'Stefan Kugler',
+        image: ImageSoeren,
+        name: 'Sören Schröder',
         position: 'Geschäftsführer',
         email: 'geschaeftsfuehrer@ehrengarde-neuwied.de',
       },
       markus: {
-        image: ImageMarkus,
-        name: 'Markus Schröder',
+        image: ImageStefan,
+        name: 'Stefan Kugler',
         position: 'Präsident',
         email: 'praesident@ehrengarde-neuwied.de',
       },
