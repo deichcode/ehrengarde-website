@@ -36,8 +36,8 @@
       </Paragraph>
       <Contacts :contacts="[
       {
-      position: 'Piccolobetreuung',
-      name: 'Melanie Klein',
+      position: '',
+      name: 'Piccolobetreuung',
       email: 'kontakt-piccolos@ehrengarde-neuwied.de'}]"/>
       <Separator/>
 
