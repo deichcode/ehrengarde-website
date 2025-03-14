@@ -25,7 +25,7 @@
           <a href="mailto:info@ehrengarde-neuwied.de">info@ehrengarde-neuwied.de</a>
         </p>
         <p>
-          Geschäftsführer
+          Präsident
           <br/>
           Stefan Kugler
           <br/>
