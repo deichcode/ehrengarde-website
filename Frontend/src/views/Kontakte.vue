@@ -34,7 +34,7 @@ export default {
     return {
       stefan: {
         image: ImageSoeren,
-        name: 'Sören Schröder',
+        name: 'Sören Ritter',
         position: 'Geschäftsführer',
         email: 'geschaeftsfuehrer@ehrengarde-neuwied.de',
       },
