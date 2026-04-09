@@ -57,6 +57,8 @@
         schau bei den Proben
         vorbei oder schreib uns, wir freuen uns auf jedes neue Gesicht.
       </Paragraph>
+      <Separator/>
+
 
       <TopicHeader id="reservisten" :src="reservisten" title="Die Reservisten"/>
       <Paragraph>
