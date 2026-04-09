@@ -57,12 +57,6 @@
         schau bei den Proben
         vorbei oder schreib uns, wir freuen uns auf jedes neue Gesicht.
       </Paragraph>
-      <Contacts :contacts="[
-      {image: alex,
-      position: 'Kommandeur',
-      name: 'Alexander Wertgen',
-      email: 'kommandeur@ehrengarde-neuwied.de'}]"/>
-      <Separator/>
 
       <TopicHeader id="reservisten" :src="reservisten" title="Die Reservisten"/>
       <Paragraph>
