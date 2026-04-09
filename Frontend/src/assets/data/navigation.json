@@ -4,10 +4,6 @@
     "route": "/"
   },
   {
-    "text": "Termine",
-    "route": "/termine"
-  },
-  {
     "text": "Corps",
     "route": "/corps"
   },
