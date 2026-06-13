@@ -59,7 +59,6 @@
       </Paragraph>
       <Separator/>
 
-
       <TopicHeader id="reservisten" :src="reservisten" title="Die Reservisten"/>
       <Paragraph>
         Von wegen die Reserve hat Ruh… Unsere Reservisten gehören noch lange nicht zum alten

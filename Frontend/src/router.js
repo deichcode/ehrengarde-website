@@ -77,14 +77,6 @@ export default new Router({
         title: 'Datenschutz',
       },
     },
-    {
-      path: '/spuelmobil',
-      name: 'Spülmobil',
-      component: () => import('./views/Spuelmobil.vue'),
-      meta: {
-        title: 'Spuelmobil',
-      },
-    },
   ],
   scrollBehavior() {
     return { x: 0, y: 0 };
