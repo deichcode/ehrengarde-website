@@ -9,7 +9,7 @@
       Sie möchten mit uns in Kontakt treten? Wir freuen uns auf ihre E-Mail.
     </p>
     <div id="kontakte">
-      <Contacts :contacts="[stefan, markus, alex]" />
+      <Contacts :contacts="[praes]" />
     </div>
     <Seperator/>
     <SocialMedia/>
@@ -32,19 +32,19 @@ export default {
   },
   data() {
     return {
-      stefan: {
+      geschf: {
         image: ImageSoeren,
         name: 'Sören Ritter',
         position: 'Geschäftsführer',
         email: 'geschaeftsfuehrer@ehrengarde-neuwied.de',
       },
-      markus: {
+      praes: {
         image: ImageStefan,
         name: 'Stefan Kugler',
         position: 'Präsident',
         email: 'praesident@ehrengarde-neuwied.de',
       },
-      alex: {
+      komm: {
         image: ImageAlex,
         name: 'Alexander Wertgen',
         position: 'Kommandeur',
